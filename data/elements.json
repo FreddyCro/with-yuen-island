@@ -1,0 +1,6624 @@
+{
+ "generatedAt": "2026-11-23T21:41:44.312Z",
+ "source": [
+  "temp/posts-geo.json",
+  "temp/places.json"
+ ],
+ "rules": [
+  {
+   "island": "council",
+   "element": "council-hall",
+   "keywords": [
+    "質詢",
+    "總預算",
+    "預算審查",
+    "預算",
+    "定期會",
+    "臨時會",
+    "施政報告",
+    "專案報告",
+    "決算",
+    "議會"
+   ]
+  },
+  {
+   "island": "council",
+   "element": "lunch-tray",
+   "keywords": [
+    "營養午餐",
+    "午餐",
+    "餐點",
+    "毒油",
+    "廚工"
+   ]
+  },
+  {
+   "island": "council",
+   "element": "milk",
+   "keywords": [
+    "鮮奶",
+    "鮮乳",
+    "牛奶"
+   ]
+  },
+  {
+   "island": "council",
+   "element": "elder-card",
+   "keywords": [
+    "敬老",
+    "長輩",
+    "高齡",
+    "銀髮",
+    "長者"
+   ]
+  },
+  {
+   "island": "council",
+   "element": "baby",
+   "keywords": [
+    "好孕",
+    "生育",
+    "托嬰",
+    "公托",
+    "幼兒",
+    "兒少",
+    "托育",
+    "育兒",
+    "凍卵",
+    "親子"
+   ]
+  },
+  {
+   "island": "council",
+   "element": "suitcase",
+   "keywords": [
+    "考察",
+    "拜會",
+    "世博",
+    "東京",
+    "日本",
+    "參訪",
+    "大阪"
+   ]
+  },
+  {
+   "island": "council",
+   "element": "shield",
+   "keywords": [
+    "治安",
+    "槍",
+    "毒駕",
+    "毒品",
+    "噪音車",
+    "性侵",
+    "詐騙",
+    "警",
+    "安置"
+   ]
+  },
+  {
+   "island": "council",
+   "element": "coin",
+   "keywords": [
+    "稅",
+    "補助",
+    "普發",
+    "獎勵金",
+    "貸款",
+    "統籌分配",
+    "津貼",
+    "經費",
+    "費增"
+   ]
+  },
+  {
+   "island": "council",
+   "element": "flag",
+   "keywords": [
+    "黨團",
+    "黨務",
+    "民進黨",
+    "台灣是",
+    "國家",
+    "青年局",
+    "罷免"
+   ]
+  },
+  {
+   "island": "local",
+   "element": "repair",
+   "keywords": [
+    "颱風",
+    "災情",
+    "災後",
+    "災害",
+    "災區",
+    "風災",
+    "水災",
+    "農損",
+    "坍方",
+    "搶通",
+    "護岸",
+    "土石",
+    "淹水",
+    "積水",
+    "倒塌",
+    "崩塌",
+    "搶修",
+    "漏水",
+    "剝落",
+    "邊坡"
+   ]
+  },
+  {
+   "island": "local",
+   "element": "bridge",
+   "keywords": [
+    "大橋",
+    "新橋",
+    "高架橋",
+    "陸橋",
+    "環橋",
+    "橋梁",
+    "關渡橋",
+    "老梅橋",
+    "江厝橋"
+   ],
+   "placeKinds": [
+    "橋"
+   ]
+  },
+  {
+   "island": "local",
+   "element": "port",
+   "keywords": [
+    "漁港",
+    "碼頭"
+   ],
+   "placeKinds": [
+    "港口"
+   ]
+  },
+  {
+   "island": "local",
+   "element": "transit",
+   "keywords": [
+    "公車",
+    "候車",
+    "站牌",
+    "youbike",
+    "輕軌",
+    "捷運",
+    "新北捷",
+    "客運",
+    "公共運輸",
+    "轉運",
+    "接駁",
+    "巴士",
+    "f137",
+    "882",
+    "紅13",
+    "計程車",
+    "專車"
+   ],
+   "placeKinds": [
+    "車站"
+   ]
+  },
+  {
+   "island": "local",
+   "element": "library",
+   "keywords": [
+    "圖書館",
+    "分館",
+    "書屋",
+    "閱覽室",
+    "圖書"
+   ],
+   "placeKinds": [
+    "圖書館"
+   ]
+  },
+  {
+   "island": "local",
+   "element": "market",
+   "keywords": [
+    "市場"
+   ],
+   "placeKinds": [
+    "市場"
+   ]
+  },
+  {
+   "island": "local",
+   "element": "hall",
+   "keywords": [
+    "活動中心"
+   ],
+   "placeKinds": [
+    "活動中心"
+   ]
+  },
+  {
+   "island": "local",
+   "element": "parking",
+   "keywords": [
+    "停車"
+   ]
+  },
+  {
+   "island": "local",
+   "element": "playground",
+   "keywords": [
+    "遊戲場",
+    "公園",
+    "溜滑梯",
+    "鞦韆",
+    "遊具",
+    "共融",
+    "健身房",
+    "體健設施"
+   ],
+   "placeKinds": [
+    "公園"
+   ]
+  },
+  {
+   "island": "local",
+   "element": "school",
+   "keywords": [
+    "國小",
+    "國中",
+    "高中",
+    "幼兒園",
+    "校園",
+    "跑道",
+    "操場",
+    "學校",
+    "大學",
+    "高職",
+    "商工",
+    "實中",
+    "球場",
+    "公托",
+    "校隊",
+    "體育班",
+    "學童"
+   ],
+   "placeKinds": [
+    "學校",
+    "運動場"
+   ]
+  },
+  {
+   "island": "local",
+   "element": "crosswalk",
+   "keywords": [
+    "人行道",
+    "號誌",
+    "斑馬線",
+    "標線",
+    "路口",
+    "道路",
+    "拓寬",
+    "路面",
+    "車道",
+    "柏油",
+    "鋪面",
+    "路燈",
+    "紅綠燈",
+    "側溝",
+    "排水",
+    "匝道",
+    "路段",
+    "巷",
+    "街",
+    "路"
+   ],
+   "placeKinds": [
+    "路",
+    "線"
+   ]
+  },
+  {
+   "island": "local",
+   "element": "event",
+   "keywords": [
+    "課程",
+    "講座",
+    "活動",
+    "圓滿",
+    "體驗",
+    "夏令營",
+    "冬令營",
+    "音樂",
+    "市集",
+    "園遊會",
+    "表演",
+    "比賽",
+    "邀請賽",
+    "友誼賽",
+    "特展",
+    "開打",
+    "結訓",
+    "落幕",
+    "說明會",
+    "座談會",
+    "聽證會",
+    "淨灘",
+    "巡禮"
+   ]
+  },
+  {
+   "island": "local",
+   "element": "repair",
+   "keywords": [
+    "修復",
+    "整修",
+    "翻新",
+    "工程",
+    "完工",
+    "動土",
+    "動工",
+    "開工",
+    "施工",
+    "修建",
+    "重建",
+    "改建",
+    "新建"
+   ]
+  }
+ ],
+ "posts": [
+  {
+   "id": 15463,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 15467,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 15452,
+   "island": "八里",
+   "topic": "教育",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 15446,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "school",
+   "matched": "球場"
+  },
+  {
+   "id": 15441,
+   "island": "石門",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "youbike"
+  },
+  {
+   "id": 15377,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "kind:路"
+  },
+  {
+   "id": 15382,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "library",
+   "matched": "圖書館"
+  },
+  {
+   "id": 15389,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "遊戲場"
+  },
+  {
+   "id": 15401,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "bridge",
+   "matched": "大橋"
+  },
+  {
+   "id": 15395,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "公園"
+  },
+  {
+   "id": 15404,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "輕軌"
+  },
+  {
+   "id": 15407,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "repair",
+   "matched": "工程"
+  },
+  {
+   "id": 15350,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "遊戲場"
+  },
+  {
+   "id": 15356,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "斑馬線"
+  },
+  {
+   "id": 15359,
+   "island": "八里",
+   "topic": "交通",
+   "element": "port",
+   "matched": "kind:港口"
+  },
+  {
+   "id": 15367,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "巷"
+  },
+  {
+   "id": 15365,
+   "island": "石門",
+   "topic": "校園",
+   "element": "parking",
+   "matched": "停車"
+  },
+  {
+   "id": 15370,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "crosswalk",
+   "matched": "kind:線"
+  },
+  {
+   "id": 15372,
+   "island": "八里",
+   "topic": "民生",
+   "element": "crosswalk",
+   "matched": "車道"
+  },
+  {
+   "id": 15296,
+   "island": "議會",
+   "topic": "民生",
+   "element": "elder-card",
+   "matched": "高齡"
+  },
+  {
+   "id": 15298,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 15305,
+   "island": "八里",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "遊戲場"
+  },
+  {
+   "id": 15309,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "repair",
+   "matched": "修復"
+  },
+  {
+   "id": 15311,
+   "island": "八里",
+   "topic": "教育",
+   "element": "event",
+   "matched": "邀請賽"
+  },
+  {
+   "id": 15317,
+   "island": "議會",
+   "topic": null,
+   "element": "council-hall",
+   "matched": "質詢"
+  },
+  {
+   "id": 15323,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "接駁"
+  },
+  {
+   "id": 15320,
+   "island": "淡水",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 15330,
+   "island": "八里",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "側溝"
+  },
+  {
+   "id": 15337,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "遊戲場"
+  },
+  {
+   "id": 15339,
+   "island": "八里",
+   "topic": "交通",
+   "element": "market",
+   "matched": "市場"
+  },
+  {
+   "id": 15281,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "道路"
+  },
+  {
+   "id": 15249,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "路"
+  },
+  {
+   "id": 15257,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 15262,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "library",
+   "matched": "圖書館"
+  },
+  {
+   "id": 15264,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 15268,
+   "island": "八里",
+   "topic": "民生",
+   "element": "event",
+   "matched": "說明會"
+  },
+  {
+   "id": 15270,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "道路"
+  },
+  {
+   "id": 15202,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "school",
+   "matched": "球場"
+  },
+  {
+   "id": 15194,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 15212,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "路"
+  },
+  {
+   "id": 15206,
+   "island": "石門",
+   "topic": "交通",
+   "element": "repair",
+   "matched": "工程"
+  },
+  {
+   "id": 15216,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "repair",
+   "matched": "淹水"
+  },
+  {
+   "id": 15221,
+   "island": "八里",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 15226,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "hall",
+   "matched": "活動中心"
+  },
+  {
+   "id": 15230,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "輕軌"
+  },
+  {
+   "id": 15234,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "market",
+   "matched": "市場"
+  },
+  {
+   "id": 15180,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "路"
+  },
+  {
+   "id": 15130,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "event",
+   "matched": "圓滿"
+  },
+  {
+   "id": 15186,
+   "island": "議會",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 15136,
+   "island": "八里",
+   "topic": null,
+   "element": "event",
+   "matched": "活動"
+  },
+  {
+   "id": 15138,
+   "island": "八里",
+   "topic": "民生",
+   "element": "event",
+   "matched": "說明會"
+  },
+  {
+   "id": 15178,
+   "island": "八里",
+   "topic": "民生",
+   "element": "repair",
+   "matched": "動土"
+  },
+  {
+   "id": 15146,
+   "island": "八里",
+   "topic": "民生",
+   "element": "repair",
+   "matched": "動土"
+  },
+  {
+   "id": 15140,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "school",
+   "matched": "kind:學校"
+  },
+  {
+   "id": 15152,
+   "island": "八里",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "環橋"
+  },
+  {
+   "id": 15149,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 15158,
+   "island": "石門",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 15166,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "school",
+   "matched": "kind:學校"
+  },
+  {
+   "id": 15172,
+   "island": "議會",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 15117,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 15115,
+   "island": "議會",
+   "topic": "校園",
+   "element": "lunch-tray",
+   "matched": "營養午餐"
+  },
+  {
+   "id": 15050,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "market",
+   "matched": "kind:市場"
+  },
+  {
+   "id": 15110,
+   "island": "八里",
+   "topic": "民生",
+   "element": "port",
+   "matched": "kind:港口"
+  },
+  {
+   "id": 15052,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "公車"
+  },
+  {
+   "id": 15058,
+   "island": "議會",
+   "topic": "教育",
+   "element": "council-hall",
+   "matched": "議會"
+  },
+  {
+   "id": 15060,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "school",
+   "matched": "球場"
+  },
+  {
+   "id": 15068,
+   "island": "議會",
+   "topic": "教育",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 15066,
+   "island": "八里",
+   "topic": "民生",
+   "element": "port",
+   "matched": "kind:港口"
+  },
+  {
+   "id": 15079,
+   "island": "八里",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國中"
+  },
+  {
+   "id": 15083,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "repair",
+   "matched": "重建"
+  },
+  {
+   "id": 15087,
+   "island": "議會",
+   "topic": "民生",
+   "element": "lunch-tray",
+   "matched": "營養午餐"
+  },
+  {
+   "id": 15094,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "event",
+   "matched": "圓滿"
+  },
+  {
+   "id": 15090,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "公園"
+  },
+  {
+   "id": 15020,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "輕軌"
+  },
+  {
+   "id": 15023,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "大橋"
+  },
+  {
+   "id": 15029,
+   "island": "議會",
+   "topic": "教育",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 15026,
+   "island": "八里",
+   "topic": "民生",
+   "element": "hall",
+   "matched": "活動中心"
+  },
+  {
+   "id": 15032,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "repair",
+   "matched": "災情"
+  },
+  {
+   "id": 14987,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 14985,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "路"
+  },
+  {
+   "id": 14992,
+   "island": "八里",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "路"
+  },
+  {
+   "id": 14994,
+   "island": "石門",
+   "topic": "交通",
+   "element": "port",
+   "matched": "漁港"
+  },
+  {
+   "id": 14998,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 15000,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "school",
+   "matched": "學校"
+  },
+  {
+   "id": 15006,
+   "island": "八里",
+   "topic": "民生",
+   "element": "port",
+   "matched": "kind:港口"
+  },
+  {
+   "id": 14930,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "大橋"
+  },
+  {
+   "id": 14934,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "道路"
+  },
+  {
+   "id": 14939,
+   "island": "八里",
+   "topic": "交通",
+   "element": "parking",
+   "matched": "停車"
+  },
+  {
+   "id": 14936,
+   "island": "八里",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "公車"
+  },
+  {
+   "id": 14941,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "大橋"
+  },
+  {
+   "id": 14951,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "transit",
+   "matched": "kind:車站"
+  },
+  {
+   "id": 14945,
+   "island": "八里",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "街"
+  },
+  {
+   "id": 14961,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "街"
+  },
+  {
+   "id": 14957,
+   "island": "八里",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "街"
+  },
+  {
+   "id": 14966,
+   "island": "議會",
+   "topic": "民生",
+   "element": "baby",
+   "matched": "兒少"
+  },
+  {
+   "id": 14964,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "kind:公園"
+  },
+  {
+   "id": 14969,
+   "island": "石門",
+   "topic": "交通",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 15125,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 14880,
+   "island": "議會",
+   "topic": "長照",
+   "element": "elder-card",
+   "matched": "敬老"
+  },
+  {
+   "id": 14883,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "大橋"
+  },
+  {
+   "id": 14891,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "號誌"
+  },
+  {
+   "id": 14889,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "kind:線"
+  },
+  {
+   "id": 14894,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "輕軌"
+  },
+  {
+   "id": 14897,
+   "island": "八里",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "公車"
+  },
+  {
+   "id": 14899,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "捷運"
+  },
+  {
+   "id": 14901,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "kind:橋"
+  },
+  {
+   "id": 14906,
+   "island": "八里",
+   "topic": "民生",
+   "element": "school",
+   "matched": "球場"
+  },
+  {
+   "id": 14903,
+   "island": "淡水",
+   "topic": null,
+   "element": "bridge",
+   "matched": "kind:橋"
+  },
+  {
+   "id": 14910,
+   "island": "三芝",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 14873,
+   "island": "八里",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國中"
+  },
+  {
+   "id": 14918,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 14825,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "標線"
+  },
+  {
+   "id": 14833,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 14829,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "巷"
+  },
+  {
+   "id": 14835,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "kind:車站"
+  },
+  {
+   "id": 14838,
+   "island": "八里",
+   "topic": "民生",
+   "element": "port",
+   "matched": "kind:港口"
+  },
+  {
+   "id": 14850,
+   "island": "三芝",
+   "topic": "教育",
+   "element": "school",
+   "matched": "校隊"
+  },
+  {
+   "id": 14846,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 14818,
+   "island": "八里",
+   "topic": "交通",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 14855,
+   "island": "八里",
+   "topic": "交通",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 14852,
+   "island": "八里",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "路"
+  },
+  {
+   "id": 14737,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "大橋"
+  },
+  {
+   "id": 14758,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "大橋"
+  },
+  {
+   "id": 14771,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "大橋"
+  },
+  {
+   "id": 14765,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "repair",
+   "matched": "工程"
+  },
+  {
+   "id": 14779,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 14777,
+   "island": "議會",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 14781,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "school",
+   "matched": "學校"
+  },
+  {
+   "id": 14662,
+   "island": "八里",
+   "topic": "民生",
+   "element": "school",
+   "matched": "球場"
+  },
+  {
+   "id": 14668,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "大橋"
+  },
+  {
+   "id": 14670,
+   "island": "議會",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 14678,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "道路"
+  },
+  {
+   "id": 14684,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "大橋"
+  },
+  {
+   "id": 14682,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "大橋"
+  },
+  {
+   "id": 14686,
+   "island": "石門",
+   "topic": "教育",
+   "element": "school",
+   "matched": "公托"
+  },
+  {
+   "id": 14690,
+   "island": "八里",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國中"
+  },
+  {
+   "id": 14692,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "大橋"
+  },
+  {
+   "id": 14702,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "bridge",
+   "matched": "kind:橋"
+  },
+  {
+   "id": 14708,
+   "island": "三芝",
+   "topic": null,
+   "element": "library",
+   "matched": "kind:圖書館"
+  },
+  {
+   "id": 14706,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "大橋"
+  },
+  {
+   "id": 14714,
+   "island": "議會",
+   "topic": "民生",
+   "element": "baby",
+   "matched": "好孕"
+  },
+  {
+   "id": 14712,
+   "island": "淡水",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 14399,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "bridge",
+   "matched": "大橋"
+  },
+  {
+   "id": 14718,
+   "island": "八里",
+   "topic": "民生",
+   "element": "port",
+   "matched": "kind:港口"
+  },
+  {
+   "id": 14716,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "大橋"
+  },
+  {
+   "id": 14361,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "大橋"
+  },
+  {
+   "id": 14365,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "大橋"
+  },
+  {
+   "id": 14723,
+   "island": "議會",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 14368,
+   "island": "八里",
+   "topic": "教育",
+   "element": "school",
+   "matched": "幼兒園"
+  },
+  {
+   "id": 14374,
+   "island": "八里",
+   "topic": null,
+   "element": "port",
+   "matched": "kind:港口"
+  },
+  {
+   "id": 14380,
+   "island": "八里",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "kind:路"
+  },
+  {
+   "id": 14389,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "大橋"
+  },
+  {
+   "id": 14386,
+   "island": "淡水",
+   "topic": null,
+   "element": "crosswalk",
+   "matched": "kind:線"
+  },
+  {
+   "id": 14397,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "crosswalk",
+   "matched": "kind:線"
+  },
+  {
+   "id": 14391,
+   "island": "八里",
+   "topic": "民生",
+   "element": "school",
+   "matched": "球場"
+  },
+  {
+   "id": 14402,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "library",
+   "matched": "圖書館"
+  },
+  {
+   "id": 14406,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "repair",
+   "matched": "淹水"
+  },
+  {
+   "id": 14409,
+   "island": "石門",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "遊戲場"
+  },
+  {
+   "id": 14413,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "hall",
+   "matched": "活動中心"
+  },
+  {
+   "id": 14419,
+   "island": "議會",
+   "topic": null,
+   "element": "lunch-tray",
+   "matched": "營養午餐"
+  },
+  {
+   "id": 14417,
+   "island": "議會",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 14034,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "輕軌"
+  },
+  {
+   "id": 14038,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "hall",
+   "matched": "活動中心"
+  },
+  {
+   "id": 13607,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "輕軌"
+  },
+  {
+   "id": 13615,
+   "island": "八里",
+   "topic": "交通",
+   "element": "port",
+   "matched": "kind:港口"
+  },
+  {
+   "id": 13627,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "大橋"
+  },
+  {
+   "id": 13619,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "校園"
+  },
+  {
+   "id": 13637,
+   "island": "八里",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13641,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13647,
+   "island": "三芝",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 13651,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "候車"
+  },
+  {
+   "id": 13655,
+   "island": "八里",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "youbike"
+  },
+  {
+   "id": 13661,
+   "island": "三芝",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13663,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "kind:公園"
+  },
+  {
+   "id": 13665,
+   "island": "石門",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "候車"
+  },
+  {
+   "id": 13672,
+   "island": "八里",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "道路"
+  },
+  {
+   "id": 13238,
+   "island": "淡水",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13244,
+   "island": "淡水",
+   "topic": null,
+   "element": "bridge",
+   "matched": "大橋"
+  },
+  {
+   "id": 13246,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "公園"
+  },
+  {
+   "id": 12885,
+   "island": "議會",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 12890,
+   "island": "八里",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "新橋"
+  },
+  {
+   "id": 12894,
+   "island": "八里",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 12896,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "巷"
+  },
+  {
+   "id": 12571,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "crosswalk",
+   "matched": "巷"
+  },
+  {
+   "id": 12574,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "人行道"
+  },
+  {
+   "id": 12579,
+   "island": "議會",
+   "topic": "教育",
+   "element": "milk",
+   "matched": "鮮奶"
+  },
+  {
+   "id": 12583,
+   "island": "淡水",
+   "topic": null,
+   "element": "library",
+   "matched": "kind:圖書館"
+  },
+  {
+   "id": 12143,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "球場"
+  },
+  {
+   "id": 11712,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "youbike"
+  },
+  {
+   "id": 11716,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "健身房"
+  },
+  {
+   "id": 11721,
+   "island": "八里",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "公園"
+  },
+  {
+   "id": 11726,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "人行道"
+  },
+  {
+   "id": 11729,
+   "island": "八里",
+   "topic": null,
+   "element": "school",
+   "matched": "kind:學校"
+  },
+  {
+   "id": 11732,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "port",
+   "matched": "kind:港口"
+  },
+  {
+   "id": 11736,
+   "island": "八里",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 11742,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "人行道"
+  },
+  {
+   "id": 11748,
+   "island": "三芝",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "專車"
+  },
+  {
+   "id": 11752,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 11759,
+   "island": "淡水",
+   "topic": null,
+   "element": "transit",
+   "matched": "輕軌"
+  },
+  {
+   "id": 11756,
+   "island": "石門",
+   "topic": null,
+   "element": "crosswalk",
+   "matched": "kind:路"
+  },
+  {
+   "id": 11376,
+   "island": "淡水",
+   "topic": null,
+   "element": "transit",
+   "matched": "輕軌"
+  },
+  {
+   "id": 11374,
+   "island": "石門",
+   "topic": null,
+   "element": "crosswalk",
+   "matched": "kind:路"
+  },
+  {
+   "id": 11378,
+   "island": "三芝",
+   "topic": null,
+   "element": "library",
+   "matched": "kind:圖書館"
+  },
+  {
+   "id": 11144,
+   "island": "八里",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "公車"
+  },
+  {
+   "id": 11380,
+   "island": "八里",
+   "topic": "民生",
+   "element": "port",
+   "matched": "kind:港口"
+  },
+  {
+   "id": 11151,
+   "island": "議會",
+   "topic": "校園",
+   "element": "suitcase",
+   "matched": "考察"
+  },
+  {
+   "id": 11155,
+   "island": "八里",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "路口"
+  },
+  {
+   "id": 10832,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "market",
+   "matched": "市場"
+  },
+  {
+   "id": 10835,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "crosswalk",
+   "matched": "kind:線"
+  },
+  {
+   "id": 10837,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國中"
+  },
+  {
+   "id": 10846,
+   "island": "淡水",
+   "topic": null,
+   "element": "library",
+   "matched": "圖書館"
+  },
+  {
+   "id": 10844,
+   "island": "議會",
+   "topic": "校園",
+   "element": "lunch-tray",
+   "matched": "營養午餐"
+  },
+  {
+   "id": 10841,
+   "island": "八里",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "路"
+  },
+  {
+   "id": 10848,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "人行道"
+  },
+  {
+   "id": 10850,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "大橋"
+  },
+  {
+   "id": 10852,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "school",
+   "matched": "kind:運動場"
+  },
+  {
+   "id": 10854,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "library",
+   "matched": "圖書館"
+  },
+  {
+   "id": 10858,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 10856,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 10860,
+   "island": "淡水",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 10862,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "library",
+   "matched": "圖書館"
+  },
+  {
+   "id": 10864,
+   "island": "八里",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "號誌"
+  },
+  {
+   "id": 10866,
+   "island": "淡水",
+   "topic": null,
+   "element": "transit",
+   "matched": "新北捷"
+  },
+  {
+   "id": 10870,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "大橋"
+  },
+  {
+   "id": 10868,
+   "island": "八里",
+   "topic": "民生",
+   "element": "market",
+   "matched": "市場"
+  },
+  {
+   "id": 10874,
+   "island": "淡水",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 10872,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "號誌"
+  },
+  {
+   "id": 10878,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "kind:橋"
+  },
+  {
+   "id": 10876,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 10880,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "repair",
+   "matched": "漏水"
+  },
+  {
+   "id": 10884,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "遊戲場"
+  },
+  {
+   "id": 10888,
+   "island": "三芝",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 10886,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 10890,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "repair",
+   "matched": "災後"
+  },
+  {
+   "id": 12314,
+   "island": "八里",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "路"
+  },
+  {
+   "id": 10894,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 10896,
+   "island": "三芝",
+   "topic": null,
+   "element": "repair",
+   "matched": "工程"
+  },
+  {
+   "id": 10898,
+   "island": "議會",
+   "topic": "教育",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 10904,
+   "island": "議會",
+   "topic": null,
+   "element": "flag",
+   "matched": "民進黨"
+  },
+  {
+   "id": 10902,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 10900,
+   "island": "八里",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 10906,
+   "island": "八里",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "路"
+  },
+  {
+   "id": 10912,
+   "island": "淡水",
+   "topic": null,
+   "element": "bridge",
+   "matched": "kind:橋"
+  },
+  {
+   "id": 10910,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "輕軌"
+  },
+  {
+   "id": 10914,
+   "island": "八里",
+   "topic": "民生",
+   "element": "port",
+   "matched": "kind:港口"
+  },
+  {
+   "id": 10916,
+   "island": "淡水",
+   "topic": null,
+   "element": "event",
+   "matched": "巡禮"
+  },
+  {
+   "id": 10918,
+   "island": "議會",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 10920,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 10926,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "crosswalk",
+   "matched": "道路"
+  },
+  {
+   "id": 10924,
+   "island": "淡水",
+   "topic": null,
+   "element": "repair",
+   "matched": "整修"
+  },
+  {
+   "id": 10922,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "crosswalk",
+   "matched": "道路"
+  },
+  {
+   "id": 10933,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "crosswalk",
+   "matched": "道路"
+  },
+  {
+   "id": 10930,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "crosswalk",
+   "matched": "道路"
+  },
+  {
+   "id": 10928,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "crosswalk",
+   "matched": "道路"
+  },
+  {
+   "id": 10945,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "crosswalk",
+   "matched": "kind:路"
+  },
+  {
+   "id": 10940,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "crosswalk",
+   "matched": "道路"
+  },
+  {
+   "id": 10957,
+   "island": "八里",
+   "topic": "民生",
+   "element": "bridge",
+   "matched": "高架橋"
+  },
+  {
+   "id": 10967,
+   "island": "淡水",
+   "topic": null,
+   "element": "bridge",
+   "matched": "大橋"
+  },
+  {
+   "id": 10963,
+   "island": "淡水",
+   "topic": null,
+   "element": "bridge",
+   "matched": "大橋"
+  },
+  {
+   "id": 10973,
+   "island": "八里",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 10971,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "高中"
+  },
+  {
+   "id": 10977,
+   "island": "八里",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "道路"
+  },
+  {
+   "id": 10975,
+   "island": "八里",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "遊戲場"
+  },
+  {
+   "id": 10979,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "market",
+   "matched": "市場"
+  },
+  {
+   "id": 10981,
+   "island": "三芝",
+   "topic": null,
+   "element": "event",
+   "matched": "課程"
+  },
+  {
+   "id": 11401,
+   "island": "淡水",
+   "topic": null,
+   "element": "event",
+   "matched": "講座"
+  },
+  {
+   "id": 10983,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "路"
+  },
+  {
+   "id": 10985,
+   "island": "三芝",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 10987,
+   "island": "議會",
+   "topic": null,
+   "element": "council-hall",
+   "matched": "總預算"
+  },
+  {
+   "id": 10989,
+   "island": "淡水",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 11163,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 11161,
+   "island": "三芝",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "街"
+  },
+  {
+   "id": 11168,
+   "island": "議會",
+   "topic": "民生",
+   "element": "council-hall",
+   "matched": "總預算"
+  },
+  {
+   "id": 11165,
+   "island": "議會",
+   "topic": "民生",
+   "element": "coin",
+   "matched": "補助"
+  },
+  {
+   "id": 11170,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "健身房"
+  },
+  {
+   "id": 11174,
+   "island": "八里",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 11176,
+   "island": "議會",
+   "topic": "校園",
+   "element": "coin",
+   "matched": "補助"
+  },
+  {
+   "id": 11180,
+   "island": "淡水",
+   "topic": null,
+   "element": "repair",
+   "matched": "修復"
+  },
+  {
+   "id": 11178,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 11182,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "repair",
+   "matched": "重建"
+  },
+  {
+   "id": 11186,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "crosswalk",
+   "matched": "側溝"
+  },
+  {
+   "id": 11184,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國中"
+  },
+  {
+   "id": 11190,
+   "island": "八里",
+   "topic": null,
+   "element": "bridge",
+   "matched": "kind:橋"
+  },
+  {
+   "id": 11188,
+   "island": "八里",
+   "topic": "民生",
+   "element": "port",
+   "matched": "kind:港口"
+  },
+  {
+   "id": 11204,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "hall",
+   "matched": "活動中心"
+  },
+  {
+   "id": 11210,
+   "island": "議會",
+   "topic": "民生",
+   "element": "council-hall",
+   "matched": "質詢"
+  },
+  {
+   "id": 11208,
+   "island": "議會",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 11206,
+   "island": "議會",
+   "topic": "校園",
+   "element": "council-hall",
+   "matched": "質詢"
+  },
+  {
+   "id": 11212,
+   "island": "議會",
+   "topic": null,
+   "element": "council-hall",
+   "matched": "質詢"
+  },
+  {
+   "id": 11214,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "school",
+   "matched": "kind:學校"
+  },
+  {
+   "id": 11218,
+   "island": "議會",
+   "topic": "教育",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 11220,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 11225,
+   "island": "議會",
+   "topic": "校園",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 11227,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "人行道"
+  },
+  {
+   "id": 11229,
+   "island": "石門",
+   "topic": "教育",
+   "element": "school",
+   "matched": "公托"
+  },
+  {
+   "id": 12099,
+   "island": "三芝",
+   "topic": "教育",
+   "element": "library",
+   "matched": "圖書館"
+  },
+  {
+   "id": 11237,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "school",
+   "matched": "高中"
+  },
+  {
+   "id": 11235,
+   "island": "議會",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 11239,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "port",
+   "matched": "碼頭"
+  },
+  {
+   "id": 11241,
+   "island": "淡水",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 11249,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "道路"
+  },
+  {
+   "id": 11245,
+   "island": "八里",
+   "topic": "交通",
+   "element": "parking",
+   "matched": "停車"
+  },
+  {
+   "id": 11254,
+   "island": "八里",
+   "topic": "民生",
+   "element": "parking",
+   "matched": "停車"
+  },
+  {
+   "id": 11252,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "大橋"
+  },
+  {
+   "id": 11256,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "repair",
+   "matched": "改建"
+  },
+  {
+   "id": 11258,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "hall",
+   "matched": "活動中心"
+  },
+  {
+   "id": 11264,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "event",
+   "matched": "座談會"
+  },
+  {
+   "id": 11271,
+   "island": "三芝",
+   "topic": "教育",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 11275,
+   "island": "八里",
+   "topic": "教育",
+   "element": "event",
+   "matched": "邀請賽"
+  },
+  {
+   "id": 11279,
+   "island": "淡水",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 11277,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "port",
+   "matched": "kind:港口"
+  },
+  {
+   "id": 11285,
+   "island": "淡水",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 11300,
+   "island": "八里",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "客運"
+  },
+  {
+   "id": 11306,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "port",
+   "matched": "碼頭"
+  },
+  {
+   "id": 11303,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "人行道"
+  },
+  {
+   "id": 11315,
+   "island": "議會",
+   "topic": null,
+   "element": "elder-card",
+   "matched": "敬老"
+  },
+  {
+   "id": 11312,
+   "island": "淡水",
+   "topic": null,
+   "element": "library",
+   "matched": "kind:圖書館"
+  },
+  {
+   "id": 11319,
+   "island": "議會",
+   "topic": "校園",
+   "element": "milk",
+   "matched": "鮮乳"
+  },
+  {
+   "id": 11321,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "道路"
+  },
+  {
+   "id": 11323,
+   "island": "議會",
+   "topic": null,
+   "element": "suitcase",
+   "matched": "考察"
+  },
+  {
+   "id": 11328,
+   "island": "淡水",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 11330,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "大橋"
+  },
+  {
+   "id": 11481,
+   "island": "八里",
+   "topic": null,
+   "element": "playground",
+   "matched": "公園"
+  },
+  {
+   "id": 11483,
+   "island": "淡水",
+   "topic": null,
+   "element": "playground",
+   "matched": "公園"
+  },
+  {
+   "id": 11485,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "道路"
+  },
+  {
+   "id": 11489,
+   "island": "淡水",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 11487,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "hall",
+   "matched": "kind:活動中心"
+  },
+  {
+   "id": 11491,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "event",
+   "matched": "課程"
+  },
+  {
+   "id": 11952,
+   "island": "淡水",
+   "topic": null,
+   "element": "port",
+   "matched": "碼頭"
+  },
+  {
+   "id": 11499,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "library",
+   "matched": "圖書館"
+  },
+  {
+   "id": 11501,
+   "island": "淡水",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 11503,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "youbike"
+  },
+  {
+   "id": 11509,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "kind:學校"
+  },
+  {
+   "id": 11511,
+   "island": "議會",
+   "topic": null,
+   "element": "lunch-tray",
+   "matched": "廚工"
+  },
+  {
+   "id": 11515,
+   "island": "議會",
+   "topic": null,
+   "element": "baby",
+   "matched": "兒少"
+  },
+  {
+   "id": 11513,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "school",
+   "matched": "球場"
+  },
+  {
+   "id": 11519,
+   "island": "三芝",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 11517,
+   "island": "議會",
+   "topic": null,
+   "element": "flag",
+   "matched": "國家"
+  },
+  {
+   "id": 11521,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "market",
+   "matched": "市場"
+  },
+  {
+   "id": 11523,
+   "island": "淡水",
+   "topic": null,
+   "element": "school",
+   "matched": "kind:運動場"
+  },
+  {
+   "id": 11527,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "標線"
+  },
+  {
+   "id": 11525,
+   "island": "議會",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 11529,
+   "island": "議會",
+   "topic": null,
+   "element": "council-hall",
+   "matched": "臨時會"
+  },
+  {
+   "id": 11531,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "transit",
+   "matched": "捷運"
+  },
+  {
+   "id": 11537,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 11540,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "候車"
+  },
+  {
+   "id": 11542,
+   "island": "三芝",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 11544,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "人行道"
+  },
+  {
+   "id": 11550,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "youbike"
+  },
+  {
+   "id": 11559,
+   "island": "議會",
+   "topic": null,
+   "element": "shield",
+   "matched": "性侵"
+  },
+  {
+   "id": 11553,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "大橋"
+  },
+  {
+   "id": 11561,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "hall",
+   "matched": "活動中心"
+  },
+  {
+   "id": 11565,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "library",
+   "matched": "圖書館"
+  },
+  {
+   "id": 11567,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "parking",
+   "matched": "停車"
+  },
+  {
+   "id": 11571,
+   "island": "八里",
+   "topic": "交通",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 11573,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "輕軌"
+  },
+  {
+   "id": 11575,
+   "island": "八里",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "健身房"
+  },
+  {
+   "id": 11581,
+   "island": "議會",
+   "topic": null,
+   "element": "council-hall",
+   "matched": "決算"
+  },
+  {
+   "id": 11587,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "捷運"
+  },
+  {
+   "id": 11585,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 11598,
+   "island": "議會",
+   "topic": null,
+   "element": "flag",
+   "matched": "台灣是"
+  },
+  {
+   "id": 11591,
+   "island": "淡水",
+   "topic": null,
+   "element": "transit",
+   "matched": "輕軌"
+  },
+  {
+   "id": 11589,
+   "island": "八里",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "關渡橋"
+  },
+  {
+   "id": 11600,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "公園"
+  },
+  {
+   "id": 11604,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "輕軌"
+  },
+  {
+   "id": 11612,
+   "island": "三芝",
+   "topic": null,
+   "element": "school",
+   "matched": "大學"
+  },
+  {
+   "id": 11616,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "捷運"
+  },
+  {
+   "id": 11622,
+   "island": "淡水",
+   "topic": null,
+   "element": "event",
+   "matched": "圓滿"
+  },
+  {
+   "id": 11620,
+   "island": "議會",
+   "topic": null,
+   "element": "coin",
+   "matched": "普發"
+  },
+  {
+   "id": 11630,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 11634,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "school",
+   "matched": "kind:學校"
+  },
+  {
+   "id": 11638,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "人行道"
+  },
+  {
+   "id": 11640,
+   "island": "淡水",
+   "topic": null,
+   "element": "playground",
+   "matched": "公園"
+  },
+  {
+   "id": 11642,
+   "island": "三芝",
+   "topic": null,
+   "element": "repair",
+   "matched": "修復"
+  },
+  {
+   "id": 11644,
+   "island": "三芝",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "youbike"
+  },
+  {
+   "id": 11648,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 11650,
+   "island": "八里",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 11652,
+   "island": "議會",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 11658,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "大橋"
+  },
+  {
+   "id": 11654,
+   "island": "議會",
+   "topic": "交通",
+   "element": "shield",
+   "matched": "噪音車"
+  },
+  {
+   "id": 11660,
+   "island": "石門",
+   "topic": "交通",
+   "element": "school",
+   "matched": "實中"
+  },
+  {
+   "id": 11668,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "repair",
+   "matched": "漏水"
+  },
+  {
+   "id": 11666,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "library",
+   "matched": "圖書館"
+  },
+  {
+   "id": 11672,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "school",
+   "matched": "kind:學校"
+  },
+  {
+   "id": 11674,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "路"
+  },
+  {
+   "id": 11680,
+   "island": "八里",
+   "topic": "教育",
+   "element": "school",
+   "matched": "國中"
+  },
+  {
+   "id": 11682,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "school",
+   "matched": "kind:學校"
+  },
+  {
+   "id": 11687,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "大橋"
+  },
+  {
+   "id": 11684,
+   "island": "議會",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 11689,
+   "island": "淡水",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 11693,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "library",
+   "matched": "圖書館"
+  },
+  {
+   "id": 11697,
+   "island": "淡水",
+   "topic": null,
+   "element": "school",
+   "matched": "球場"
+  },
+  {
+   "id": 11703,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 12381,
+   "island": "淡水",
+   "topic": null,
+   "element": "bridge",
+   "matched": "kind:橋"
+  },
+  {
+   "id": 12384,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "人行道"
+  },
+  {
+   "id": 12392,
+   "island": "石門",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "公車"
+  },
+  {
+   "id": 12388,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "公車"
+  },
+  {
+   "id": 12395,
+   "island": "議會",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 12403,
+   "island": "淡水",
+   "topic": null,
+   "element": "event",
+   "matched": "友誼賽"
+  },
+  {
+   "id": 12400,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "捷運"
+  },
+  {
+   "id": 12410,
+   "island": "三芝",
+   "topic": "教育",
+   "element": "playground",
+   "matched": "遊戲場"
+  },
+  {
+   "id": 12422,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "巷"
+  },
+  {
+   "id": 12428,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "parking",
+   "matched": "停車"
+  },
+  {
+   "id": 12430,
+   "island": "議會",
+   "topic": "民生",
+   "element": "coin",
+   "matched": "稅"
+  },
+  {
+   "id": 12432,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "crosswalk",
+   "matched": "kind:線"
+  },
+  {
+   "id": 12434,
+   "island": "石門",
+   "topic": "交通",
+   "element": "school",
+   "matched": "kind:學校"
+  },
+  {
+   "id": 12440,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 12450,
+   "island": "議會",
+   "topic": "校園",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 12444,
+   "island": "議會",
+   "topic": "民生",
+   "element": "baby",
+   "matched": "幼兒"
+  },
+  {
+   "id": 12453,
+   "island": "淡水",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 12455,
+   "island": "石門",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 12458,
+   "island": "八里",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "新橋"
+  },
+  {
+   "id": 12460,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "球場"
+  },
+  {
+   "id": 12468,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 12462,
+   "island": "八里",
+   "topic": "交通",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 12474,
+   "island": "議會",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 12476,
+   "island": "八里",
+   "topic": "民生",
+   "element": "school",
+   "matched": "學童"
+  },
+  {
+   "id": 12478,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "school",
+   "matched": "大學"
+  },
+  {
+   "id": 12482,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 12484,
+   "island": "議會",
+   "topic": "交通",
+   "element": "shield",
+   "matched": "噪音車"
+  },
+  {
+   "id": 12488,
+   "island": "議會",
+   "topic": null,
+   "element": "coin",
+   "matched": "補助"
+  },
+  {
+   "id": 12490,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 12492,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "號誌"
+  },
+  {
+   "id": 12495,
+   "island": "淡水",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 12498,
+   "island": "議會",
+   "topic": null,
+   "element": "suitcase",
+   "matched": "考察"
+  },
+  {
+   "id": 12500,
+   "island": "議會",
+   "topic": null,
+   "element": "milk",
+   "matched": "鮮奶"
+  },
+  {
+   "id": 12505,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "公車"
+  },
+  {
+   "id": 12502,
+   "island": "議會",
+   "topic": null,
+   "element": "council-hall",
+   "matched": "議會"
+  },
+  {
+   "id": 12508,
+   "island": "八里",
+   "topic": "民生",
+   "element": "port",
+   "matched": "kind:港口"
+  },
+  {
+   "id": 12511,
+   "island": "議會",
+   "topic": null,
+   "element": "suitcase",
+   "matched": "東京"
+  },
+  {
+   "id": 12513,
+   "island": "議會",
+   "topic": null,
+   "element": "suitcase",
+   "matched": "考察"
+  },
+  {
+   "id": 12515,
+   "island": "三芝",
+   "topic": null,
+   "element": "repair",
+   "matched": "工程"
+  },
+  {
+   "id": 12521,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "球場"
+  },
+  {
+   "id": 12525,
+   "island": "石門",
+   "topic": null,
+   "element": "repair",
+   "matched": "修復"
+  },
+  {
+   "id": 12531,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "repair",
+   "matched": "邊坡"
+  },
+  {
+   "id": 12535,
+   "island": "議會",
+   "topic": "教育",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 12541,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "hall",
+   "matched": "活動中心"
+  },
+  {
+   "id": 12551,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "公園"
+  },
+  {
+   "id": 12545,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "repair",
+   "matched": "漏水"
+  },
+  {
+   "id": 12559,
+   "island": "八里",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "路口"
+  },
+  {
+   "id": 12554,
+   "island": "三芝",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 12586,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "候車"
+  },
+  {
+   "id": 12594,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "街"
+  },
+  {
+   "id": 12600,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "遊戲場"
+  },
+  {
+   "id": 12607,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 12613,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "大橋"
+  },
+  {
+   "id": 12619,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "路"
+  },
+  {
+   "id": 12622,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "遊戲場"
+  },
+  {
+   "id": 12628,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "校園"
+  },
+  {
+   "id": 12634,
+   "island": "石門",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 12636,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "車道"
+  },
+  {
+   "id": 12642,
+   "island": "三芝",
+   "topic": null,
+   "element": "repair",
+   "matched": "災後"
+  },
+  {
+   "id": 12644,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "repair",
+   "matched": "動工"
+  },
+  {
+   "id": 12650,
+   "island": "八里",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "公園"
+  },
+  {
+   "id": 12653,
+   "island": "三芝",
+   "topic": null,
+   "element": "event",
+   "matched": "說明會"
+  },
+  {
+   "id": 12656,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "youbike"
+  },
+  {
+   "id": 12659,
+   "island": "八里",
+   "topic": "交通",
+   "element": "parking",
+   "matched": "停車"
+  },
+  {
+   "id": 12662,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 12664,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "market",
+   "matched": "市場"
+  },
+  {
+   "id": 12668,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "號誌"
+  },
+  {
+   "id": 12671,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 12677,
+   "island": "議會",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 12680,
+   "island": "八里",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國中"
+  },
+  {
+   "id": 12683,
+   "island": "議會",
+   "topic": null,
+   "element": "coin",
+   "matched": "貸款"
+  },
+  {
+   "id": 12686,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "parking",
+   "matched": "停車"
+  },
+  {
+   "id": 12689,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "youbike"
+  },
+  {
+   "id": 12692,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國中"
+  },
+  {
+   "id": 12695,
+   "island": "三芝",
+   "topic": null,
+   "element": "repair",
+   "matched": "護岸"
+  },
+  {
+   "id": 12699,
+   "island": "議會",
+   "topic": null,
+   "element": "shield",
+   "matched": "毒駕"
+  },
+  {
+   "id": 12701,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "客運"
+  },
+  {
+   "id": 12704,
+   "island": "八里",
+   "topic": "民生",
+   "element": "port",
+   "matched": "kind:港口"
+  },
+  {
+   "id": 12707,
+   "island": "淡水",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 12715,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "youbike"
+  },
+  {
+   "id": 12725,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "library",
+   "matched": "圖書館"
+  },
+  {
+   "id": 12719,
+   "island": "淡水",
+   "topic": null,
+   "element": "transit",
+   "matched": "捷運"
+  },
+  {
+   "id": 12733,
+   "island": "八里",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "匝道"
+  },
+  {
+   "id": 12739,
+   "island": "三芝",
+   "topic": null,
+   "element": "hall",
+   "matched": "活動中心"
+  },
+  {
+   "id": 12741,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "路"
+  },
+  {
+   "id": 12744,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "巷"
+  },
+  {
+   "id": 12747,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "輕軌"
+  },
+  {
+   "id": 12749,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "公園"
+  },
+  {
+   "id": 12754,
+   "island": "三芝",
+   "topic": null,
+   "element": "repair",
+   "matched": "工程"
+  },
+  {
+   "id": 12759,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "公園"
+  },
+  {
+   "id": 12756,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "道路"
+  },
+  {
+   "id": 12761,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 12767,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "library",
+   "matched": "圖書館"
+  },
+  {
+   "id": 12773,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "輕軌"
+  },
+  {
+   "id": 12776,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "playground",
+   "matched": "遊戲場"
+  },
+  {
+   "id": 12782,
+   "island": "淡水",
+   "topic": null,
+   "element": "school",
+   "matched": "球場"
+  },
+  {
+   "id": 12787,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "library",
+   "matched": "書屋"
+  },
+  {
+   "id": 12789,
+   "island": "八里",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "路"
+  },
+  {
+   "id": 10969,
+   "island": "八里",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "公園"
+  },
+  {
+   "id": 12792,
+   "island": "議會",
+   "topic": null,
+   "element": "coin",
+   "matched": "補助"
+  },
+  {
+   "id": 12794,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 12797,
+   "island": "議會",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 12799,
+   "island": "議會",
+   "topic": null,
+   "element": "shield",
+   "matched": "毒品"
+  },
+  {
+   "id": 12802,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "library",
+   "matched": "圖書館"
+  },
+  {
+   "id": 12805,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "體健設施"
+  },
+  {
+   "id": 12809,
+   "island": "三芝",
+   "topic": "校園",
+   "element": "repair",
+   "matched": "災後"
+  },
+  {
+   "id": 12822,
+   "island": "議會",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 12815,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "大橋"
+  },
+  {
+   "id": 13740,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "school",
+   "matched": "kind:學校"
+  },
+  {
+   "id": 12826,
+   "island": "三芝",
+   "topic": "教育",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 12829,
+   "island": "三芝",
+   "topic": null,
+   "element": "playground",
+   "matched": "遊戲場"
+  },
+  {
+   "id": 12832,
+   "island": "議會",
+   "topic": "校園",
+   "element": "lunch-tray",
+   "matched": "餐點"
+  },
+  {
+   "id": 12835,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "輕軌"
+  },
+  {
+   "id": 12841,
+   "island": "八里",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國中"
+  },
+  {
+   "id": 12838,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "repair",
+   "matched": "災情"
+  },
+  {
+   "id": 12844,
+   "island": "議會",
+   "topic": "交通",
+   "element": "council-hall",
+   "matched": "質詢"
+  },
+  {
+   "id": 12847,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國中"
+  },
+  {
+   "id": 12850,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "高中"
+  },
+  {
+   "id": 12854,
+   "island": "議會",
+   "topic": null,
+   "element": "council-hall",
+   "matched": "質詢"
+  },
+  {
+   "id": 12856,
+   "island": "淡水",
+   "topic": null,
+   "element": "repair",
+   "matched": "災後"
+  },
+  {
+   "id": 12864,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "路"
+  },
+  {
+   "id": 12859,
+   "island": "八里",
+   "topic": "交通",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 12867,
+   "island": "八里",
+   "topic": "教育",
+   "element": "library",
+   "matched": "閱覽室"
+  },
+  {
+   "id": 12900,
+   "island": "淡水",
+   "topic": null,
+   "element": "event",
+   "matched": "落幕"
+  },
+  {
+   "id": 12906,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "幼兒園"
+  },
+  {
+   "id": 12909,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "hall",
+   "matched": "活動中心"
+  },
+  {
+   "id": 12919,
+   "island": "淡水",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 12916,
+   "island": "議會",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 12924,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "repair",
+   "matched": "災情"
+  },
+  {
+   "id": 12933,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "repair",
+   "matched": "災區"
+  },
+  {
+   "id": 12936,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "repair",
+   "matched": "修復"
+  },
+  {
+   "id": 12939,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "repair",
+   "matched": "農損"
+  },
+  {
+   "id": 12943,
+   "island": "三芝",
+   "topic": "交通",
+   "element": "repair",
+   "matched": "坍方"
+  },
+  {
+   "id": 12954,
+   "island": "三芝",
+   "topic": "教育",
+   "element": "playground",
+   "matched": "遊戲場"
+  },
+  {
+   "id": 12958,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "school",
+   "matched": "kind:學校"
+  },
+  {
+   "id": 12964,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "parking",
+   "matched": "停車"
+  },
+  {
+   "id": 12967,
+   "island": "石門",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國中"
+  },
+  {
+   "id": 12971,
+   "island": "淡水",
+   "topic": null,
+   "element": "crosswalk",
+   "matched": "kind:線"
+  },
+  {
+   "id": 12974,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "遊戲場"
+  },
+  {
+   "id": 12978,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 12980,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 12988,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "人行道"
+  },
+  {
+   "id": 12994,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 12997,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "公園"
+  },
+  {
+   "id": 12999,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "school",
+   "matched": "高中"
+  },
+  {
+   "id": 13004,
+   "island": "淡水",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13008,
+   "island": "三芝",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "f137"
+  },
+  {
+   "id": 13012,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 13018,
+   "island": "八里",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 13023,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "路口"
+  },
+  {
+   "id": 13027,
+   "island": "八里",
+   "topic": "民生",
+   "element": "school",
+   "matched": "公托"
+  },
+  {
+   "id": 13030,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "parking",
+   "matched": "停車"
+  },
+  {
+   "id": 13034,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "號誌"
+  },
+  {
+   "id": 13037,
+   "island": "三芝",
+   "topic": "教育",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 13041,
+   "island": "三芝",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "youbike"
+  },
+  {
+   "id": 13047,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 13051,
+   "island": "八里",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "道路"
+  },
+  {
+   "id": 13056,
+   "island": "淡水",
+   "topic": null,
+   "element": "port",
+   "matched": "碼頭"
+  },
+  {
+   "id": 13060,
+   "island": "淡水",
+   "topic": null,
+   "element": "port",
+   "matched": "kind:港口"
+  },
+  {
+   "id": 13064,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 13070,
+   "island": "石門",
+   "topic": "交通",
+   "element": "port",
+   "matched": "漁港"
+  },
+  {
+   "id": 13076,
+   "island": "石門",
+   "topic": "教育",
+   "element": "school",
+   "matched": "國中"
+  },
+  {
+   "id": 13088,
+   "island": "石門",
+   "topic": null,
+   "element": "port",
+   "matched": "漁港"
+  },
+  {
+   "id": 13081,
+   "island": "淡水",
+   "topic": null,
+   "element": "playground",
+   "matched": "kind:公園"
+  },
+  {
+   "id": 13090,
+   "island": "三芝",
+   "topic": "教育",
+   "element": "library",
+   "matched": "圖書館"
+  },
+  {
+   "id": 13094,
+   "island": "三芝",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13096,
+   "island": "三芝",
+   "topic": null,
+   "element": "repair",
+   "matched": "剝落"
+  },
+  {
+   "id": 13100,
+   "island": "石門",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13104,
+   "island": "淡水",
+   "topic": null,
+   "element": "playground",
+   "matched": "公園"
+  },
+  {
+   "id": 13108,
+   "island": "淡水",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13973,
+   "island": "三芝",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "巴士"
+  },
+  {
+   "id": 13111,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "輕軌"
+  },
+  {
+   "id": 13114,
+   "island": "八里",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13117,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "巷"
+  },
+  {
+   "id": 13123,
+   "island": "八里",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "車道"
+  },
+  {
+   "id": 13129,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13133,
+   "island": "淡水",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13139,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "街"
+  },
+  {
+   "id": 13145,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "kind:線"
+  },
+  {
+   "id": 13149,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "高中"
+  },
+  {
+   "id": 13153,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "號誌"
+  },
+  {
+   "id": 13157,
+   "island": "議會",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13162,
+   "island": "八里",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "路"
+  },
+  {
+   "id": 13159,
+   "island": "議會",
+   "topic": null,
+   "element": "council-hall",
+   "matched": "定期會"
+  },
+  {
+   "id": 13167,
+   "island": "議會",
+   "topic": null,
+   "element": "coin",
+   "matched": "經費"
+  },
+  {
+   "id": 13165,
+   "island": "石門",
+   "topic": null,
+   "element": "port",
+   "matched": "kind:港口"
+  },
+  {
+   "id": 13172,
+   "island": "三芝",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "道路"
+  },
+  {
+   "id": 13170,
+   "island": "八里",
+   "topic": "民生",
+   "element": "port",
+   "matched": "kind:港口"
+  },
+  {
+   "id": 13178,
+   "island": "議會",
+   "topic": "交通",
+   "element": "elder-card",
+   "matched": "敬老"
+  },
+  {
+   "id": 13184,
+   "island": "淡水",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13186,
+   "island": "三芝",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13193,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "repair",
+   "matched": "工程"
+  },
+  {
+   "id": 13199,
+   "island": "議會",
+   "topic": null,
+   "element": "baby",
+   "matched": "好孕"
+  },
+  {
+   "id": 13197,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13204,
+   "island": "八里",
+   "topic": "教育",
+   "element": "school",
+   "matched": "國中"
+  },
+  {
+   "id": 13202,
+   "island": "八里",
+   "topic": null,
+   "element": "port",
+   "matched": "kind:港口"
+  },
+  {
+   "id": 13207,
+   "island": "淡水",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13209,
+   "island": "議會",
+   "topic": null,
+   "element": "coin",
+   "matched": "補助"
+  },
+  {
+   "id": 13214,
+   "island": "議會",
+   "topic": null,
+   "element": "coin",
+   "matched": "費增"
+  },
+  {
+   "id": 13217,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "排水"
+  },
+  {
+   "id": 13223,
+   "island": "議會",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13226,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "parking",
+   "matched": "停車"
+  },
+  {
+   "id": 13233,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "transit",
+   "matched": "捷運"
+  },
+  {
+   "id": 13230,
+   "island": "議會",
+   "topic": null,
+   "element": "baby",
+   "matched": "生育"
+  },
+  {
+   "id": 13250,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "repair",
+   "matched": "重建"
+  },
+  {
+   "id": 13252,
+   "island": "石門",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "路段"
+  },
+  {
+   "id": 13257,
+   "island": "三芝",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13261,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "公園"
+  },
+  {
+   "id": 13263,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "道路"
+  },
+  {
+   "id": 13271,
+   "island": "議會",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13274,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 13278,
+   "island": "淡水",
+   "topic": null,
+   "element": "hall",
+   "matched": "活動中心"
+  },
+  {
+   "id": 13280,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "kind:路"
+  },
+  {
+   "id": 13283,
+   "island": "八里",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13289,
+   "island": "三芝",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13291,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "library",
+   "matched": "分館"
+  },
+  {
+   "id": 13294,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "kind:線"
+  },
+  {
+   "id": 13287,
+   "island": "三芝",
+   "topic": "教育",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 13299,
+   "island": "八里",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "公園"
+  },
+  {
+   "id": 13303,
+   "island": "三芝",
+   "topic": "教育",
+   "element": "library",
+   "matched": "圖書館"
+  },
+  {
+   "id": 13307,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "repair",
+   "matched": "積水"
+  },
+  {
+   "id": 13315,
+   "island": "議會",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13313,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "路"
+  },
+  {
+   "id": 14216,
+   "island": "石門",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13318,
+   "island": "八里",
+   "topic": null,
+   "element": "playground",
+   "matched": "公園"
+  },
+  {
+   "id": 13323,
+   "island": "議會",
+   "topic": null,
+   "element": "baby",
+   "matched": "托嬰"
+  },
+  {
+   "id": 13325,
+   "island": "議會",
+   "topic": null,
+   "element": "baby",
+   "matched": "兒少"
+  },
+  {
+   "id": 13327,
+   "island": "八里",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "公園"
+  },
+  {
+   "id": 13330,
+   "island": "八里",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "kind:橋"
+  },
+  {
+   "id": 13332,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "crosswalk",
+   "matched": "路"
+  },
+  {
+   "id": 13336,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "路"
+  },
+  {
+   "id": 13340,
+   "island": "八里",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "路段"
+  },
+  {
+   "id": 13344,
+   "island": "三芝",
+   "topic": null,
+   "element": "repair",
+   "matched": "修復"
+  },
+  {
+   "id": 13348,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "路口"
+  },
+  {
+   "id": 13354,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 13358,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "號誌"
+  },
+  {
+   "id": 13362,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "公園"
+  },
+  {
+   "id": 13365,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "公車"
+  },
+  {
+   "id": 14301,
+   "island": "八里",
+   "topic": null,
+   "element": "playground",
+   "matched": "公園"
+  },
+  {
+   "id": 13369,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "橋梁"
+  },
+  {
+   "id": 13372,
+   "island": "三芝",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13375,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13385,
+   "island": "八里",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國中"
+  },
+  {
+   "id": 13377,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "event",
+   "matched": "落幕"
+  },
+  {
+   "id": 13387,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "youbike"
+  },
+  {
+   "id": 13391,
+   "island": "淡水",
+   "topic": null,
+   "element": "playground",
+   "matched": "公園"
+  },
+  {
+   "id": 13395,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "街"
+  },
+  {
+   "id": 13400,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "巷"
+  },
+  {
+   "id": 13410,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "人行道"
+  },
+  {
+   "id": 13404,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "路"
+  },
+  {
+   "id": 13415,
+   "island": "議會",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13417,
+   "island": "議會",
+   "topic": "交通",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13419,
+   "island": "淡水",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13421,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 13427,
+   "island": "議會",
+   "topic": "交通",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13424,
+   "island": "議會",
+   "topic": null,
+   "element": "council-hall",
+   "matched": "臨時會"
+  },
+  {
+   "id": 13431,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "parking",
+   "matched": "停車"
+  },
+  {
+   "id": 13437,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 13443,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 13439,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "公車"
+  },
+  {
+   "id": 13445,
+   "island": "八里",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "路"
+  },
+  {
+   "id": 13453,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 13449,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "路"
+  },
+  {
+   "id": 13455,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "kind:路"
+  },
+  {
+   "id": 13457,
+   "island": "八里",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "公園"
+  },
+  {
+   "id": 13464,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "parking",
+   "matched": "停車"
+  },
+  {
+   "id": 13460,
+   "island": "三芝",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "候車"
+  },
+  {
+   "id": 13466,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "道路"
+  },
+  {
+   "id": 13475,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 13471,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "market",
+   "matched": "市場"
+  },
+  {
+   "id": 13488,
+   "island": "三芝",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "youbike"
+  },
+  {
+   "id": 13479,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "event",
+   "matched": "圓滿"
+  },
+  {
+   "id": 13492,
+   "island": "議會",
+   "topic": null,
+   "element": "baby",
+   "matched": "公托"
+  },
+  {
+   "id": 13495,
+   "island": "八里",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13500,
+   "island": "八里",
+   "topic": null,
+   "element": "port",
+   "matched": "碼頭"
+  },
+  {
+   "id": 13506,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "路口"
+  },
+  {
+   "id": 13509,
+   "island": "淡水",
+   "topic": null,
+   "element": "transit",
+   "matched": "輕軌"
+  },
+  {
+   "id": 13513,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "公園"
+  },
+  {
+   "id": 13517,
+   "island": "八里",
+   "topic": "校園",
+   "element": "playground",
+   "matched": "遊戲場"
+  },
+  {
+   "id": 13523,
+   "island": "三芝",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "人行道"
+  },
+  {
+   "id": 13527,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國中"
+  },
+  {
+   "id": 13534,
+   "island": "議會",
+   "topic": null,
+   "element": "flag",
+   "matched": "黨團"
+  },
+  {
+   "id": 13538,
+   "island": "八里",
+   "topic": "教育",
+   "element": "school",
+   "matched": "國中"
+  },
+  {
+   "id": 13544,
+   "island": "八里",
+   "topic": null,
+   "element": "event",
+   "matched": "活動"
+  },
+  {
+   "id": 13547,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 13555,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "人行道"
+  },
+  {
+   "id": 13559,
+   "island": "三芝",
+   "topic": "交通",
+   "element": "school",
+   "matched": "kind:學校"
+  },
+  {
+   "id": 13563,
+   "island": "議會",
+   "topic": "交通",
+   "element": "shield",
+   "matched": "噪音車"
+  },
+  {
+   "id": 13566,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "repair",
+   "matched": "工程"
+  },
+  {
+   "id": 13569,
+   "island": "議會",
+   "topic": null,
+   "element": "council-hall",
+   "matched": "總預算"
+  },
+  {
+   "id": 13572,
+   "island": "石門",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "老梅橋"
+  },
+  {
+   "id": 13576,
+   "island": "議會",
+   "topic": null,
+   "element": "council-hall",
+   "matched": "議會"
+  },
+  {
+   "id": 13579,
+   "island": "議會",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13586,
+   "island": "議會",
+   "topic": null,
+   "element": "council-hall",
+   "matched": "預算"
+  },
+  {
+   "id": 13589,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "巷"
+  },
+  {
+   "id": 13595,
+   "island": "八里",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國中"
+  },
+  {
+   "id": 13678,
+   "island": "三芝",
+   "topic": "交通",
+   "element": "school",
+   "matched": "公托"
+  },
+  {
+   "id": 13681,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "公園"
+  },
+  {
+   "id": 13690,
+   "island": "八里",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "youbike"
+  },
+  {
+   "id": 13687,
+   "island": "淡水",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13695,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "路口"
+  },
+  {
+   "id": 13701,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "library",
+   "matched": "圖書館"
+  },
+  {
+   "id": 13708,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "school",
+   "matched": "國中"
+  },
+  {
+   "id": 13714,
+   "island": "淡水",
+   "topic": null,
+   "element": "transit",
+   "matched": "捷運"
+  },
+  {
+   "id": 13717,
+   "island": "淡水",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13723,
+   "island": "淡水",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13726,
+   "island": "淡水",
+   "topic": null,
+   "element": "crosswalk",
+   "matched": "kind:線"
+  },
+  {
+   "id": 13729,
+   "island": "八里",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13732,
+   "island": "八里",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國中"
+  },
+  {
+   "id": 13736,
+   "island": "淡水",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13746,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 13758,
+   "island": "議會",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13752,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "library",
+   "matched": "圖書館"
+  },
+  {
+   "id": 13761,
+   "island": "議會",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13764,
+   "island": "議會",
+   "topic": "民生",
+   "element": "council-hall",
+   "matched": "議會"
+  },
+  {
+   "id": 13768,
+   "island": "三芝",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13771,
+   "island": "三芝",
+   "topic": null,
+   "element": "school",
+   "matched": "kind:學校"
+  },
+  {
+   "id": 13776,
+   "island": "石門",
+   "topic": null,
+   "element": "event",
+   "matched": "體驗"
+  },
+  {
+   "id": 13781,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "公車"
+  },
+  {
+   "id": 13788,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "crosswalk",
+   "matched": "巷"
+  },
+  {
+   "id": 13791,
+   "island": "三芝",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "人行道"
+  },
+  {
+   "id": 13796,
+   "island": "三芝",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13799,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "crosswalk",
+   "matched": "街"
+  },
+  {
+   "id": 13805,
+   "island": "議會",
+   "topic": null,
+   "element": "flag",
+   "matched": "黨團"
+  },
+  {
+   "id": 13808,
+   "island": "議會",
+   "topic": "民生",
+   "element": "baby",
+   "matched": "公托"
+  },
+  {
+   "id": 13811,
+   "island": "議會",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13815,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "路"
+  },
+  {
+   "id": 13819,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "parking",
+   "matched": "停車"
+  },
+  {
+   "id": 13822,
+   "island": "議會",
+   "topic": null,
+   "element": "council-hall",
+   "matched": "議會"
+  },
+  {
+   "id": 13828,
+   "island": "議會",
+   "topic": null,
+   "element": "suitcase",
+   "matched": "拜會"
+  },
+  {
+   "id": 13838,
+   "island": "議會",
+   "topic": null,
+   "element": "suitcase",
+   "matched": "考察"
+  },
+  {
+   "id": 13832,
+   "island": "議會",
+   "topic": null,
+   "element": "suitcase",
+   "matched": "考察"
+  },
+  {
+   "id": 13847,
+   "island": "議會",
+   "topic": "交通",
+   "element": "suitcase",
+   "matched": "考察"
+  },
+  {
+   "id": 13858,
+   "island": "淡水",
+   "topic": null,
+   "element": "playground",
+   "matched": "公園"
+  },
+  {
+   "id": 13864,
+   "island": "八里",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "youbike"
+  },
+  {
+   "id": 13869,
+   "island": "淡水",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13874,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "道路"
+  },
+  {
+   "id": 13880,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 13886,
+   "island": "淡水",
+   "topic": null,
+   "element": "school",
+   "matched": "kind:學校"
+  },
+  {
+   "id": 13889,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "repair",
+   "matched": "完工"
+  },
+  {
+   "id": 13898,
+   "island": "石門",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13901,
+   "island": "淡水",
+   "topic": null,
+   "element": "crosswalk",
+   "matched": "kind:路"
+  },
+  {
+   "id": 13905,
+   "island": "議會",
+   "topic": "交通",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13895,
+   "island": "議會",
+   "topic": "民生",
+   "element": "coin",
+   "matched": "稅"
+  },
+  {
+   "id": 13908,
+   "island": "議會",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13912,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 13918,
+   "island": "八里",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "紅13"
+  },
+  {
+   "id": 13924,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "event",
+   "matched": "圓滿"
+  },
+  {
+   "id": 13932,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "人行道"
+  },
+  {
+   "id": 13936,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "路口"
+  },
+  {
+   "id": 13940,
+   "island": "淡水",
+   "topic": null,
+   "element": "school",
+   "matched": "kind:學校"
+  },
+  {
+   "id": 13946,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 13952,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "playground",
+   "matched": "公園"
+  },
+  {
+   "id": 13958,
+   "island": "八里",
+   "topic": "交通",
+   "element": "parking",
+   "matched": "停車"
+  },
+  {
+   "id": 13966,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "port",
+   "matched": "碼頭"
+  },
+  {
+   "id": 13962,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "道路"
+  },
+  {
+   "id": 13970,
+   "island": "議會",
+   "topic": null,
+   "element": "elder-card",
+   "matched": "長輩"
+  },
+  {
+   "id": 13977,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "路面"
+  },
+  {
+   "id": 13983,
+   "island": "淡水",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 13989,
+   "island": "三芝",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "人行道"
+  },
+  {
+   "id": 13993,
+   "island": "八里",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "youbike"
+  },
+  {
+   "id": 13997,
+   "island": "議會",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 14000,
+   "island": "議會",
+   "topic": null,
+   "element": "coin",
+   "matched": "稅"
+  },
+  {
+   "id": 14003,
+   "island": "淡水",
+   "topic": null,
+   "element": "playground",
+   "matched": "公園"
+  },
+  {
+   "id": 14009,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "遊戲場"
+  },
+  {
+   "id": 14013,
+   "island": "石門",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 14017,
+   "island": "八里",
+   "topic": "交通",
+   "element": "school",
+   "matched": "國中"
+  },
+  {
+   "id": 14023,
+   "island": "議會",
+   "topic": null,
+   "element": "flag",
+   "matched": "黨團"
+  },
+  {
+   "id": 14029,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "hall",
+   "matched": "活動中心"
+  },
+  {
+   "id": 14026,
+   "island": "石門",
+   "topic": null,
+   "element": "event",
+   "matched": "聽證會"
+  },
+  {
+   "id": 14043,
+   "island": "議會",
+   "topic": "校園",
+   "element": "baby",
+   "matched": "幼兒"
+  },
+  {
+   "id": 14047,
+   "island": "淡水",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 14055,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 14052,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "道路"
+  },
+  {
+   "id": 14061,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "公園"
+  },
+  {
+   "id": 14066,
+   "island": "議會",
+   "topic": null,
+   "element": "council-hall",
+   "matched": "議會"
+  },
+  {
+   "id": 14070,
+   "island": "議會",
+   "topic": "校園",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 14073,
+   "island": "三芝",
+   "topic": "交通",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 14077,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "kind:線"
+  },
+  {
+   "id": 14080,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "道路"
+  },
+  {
+   "id": 14083,
+   "island": "議會",
+   "topic": "校園",
+   "element": "council-hall",
+   "matched": "專案報告"
+  },
+  {
+   "id": 14086,
+   "island": "議會",
+   "topic": "校園",
+   "element": "baby",
+   "matched": "幼兒"
+  },
+  {
+   "id": 14089,
+   "island": "三芝",
+   "topic": "教育",
+   "element": "event",
+   "matched": "課程"
+  },
+  {
+   "id": 14096,
+   "island": "議會",
+   "topic": "校園",
+   "element": "council-hall",
+   "matched": "專案報告"
+  },
+  {
+   "id": 14099,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "kind:橋"
+  },
+  {
+   "id": 14103,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "公園"
+  },
+  {
+   "id": 14109,
+   "island": "淡水",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 14106,
+   "island": "議會",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 14115,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "event",
+   "matched": "課程"
+  },
+  {
+   "id": 14125,
+   "island": "淡水",
+   "topic": null,
+   "element": "crosswalk",
+   "matched": "kind:線"
+  },
+  {
+   "id": 14128,
+   "island": "八里",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "路"
+  },
+  {
+   "id": 14133,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "道路"
+  },
+  {
+   "id": 14139,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 14136,
+   "island": "議會",
+   "topic": "民生",
+   "element": "council-hall",
+   "matched": "專案報告"
+  },
+  {
+   "id": 14142,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "event",
+   "matched": "音樂"
+  },
+  {
+   "id": 14145,
+   "island": "淡水",
+   "topic": null,
+   "element": "playground",
+   "matched": "公園"
+  },
+  {
+   "id": 14159,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "幼兒園"
+  },
+  {
+   "id": 14153,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "人行道"
+  },
+  {
+   "id": 14165,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 14162,
+   "island": "議會",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 14169,
+   "island": "八里",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 14173,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "crosswalk",
+   "matched": "kind:路"
+  },
+  {
+   "id": 14185,
+   "island": "八里",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 14182,
+   "island": "八里",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 14179,
+   "island": "八里",
+   "topic": "民生",
+   "element": "school",
+   "matched": "公托"
+  },
+  {
+   "id": 14190,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "道路"
+  },
+  {
+   "id": 14187,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "道路"
+  },
+  {
+   "id": 14194,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "school",
+   "matched": "高中"
+  },
+  {
+   "id": 14192,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "school",
+   "matched": "高中"
+  },
+  {
+   "id": 14203,
+   "island": "淡水",
+   "topic": null,
+   "element": "port",
+   "matched": "kind:港口"
+  },
+  {
+   "id": 14197,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "巷"
+  },
+  {
+   "id": 14206,
+   "island": "淡水",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 14210,
+   "island": "八里",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 14213,
+   "island": "議會",
+   "topic": null,
+   "element": "council-hall",
+   "matched": "質詢"
+  },
+  {
+   "id": 14220,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "人行道"
+  },
+  {
+   "id": 14224,
+   "island": "議會",
+   "topic": null,
+   "element": "shield",
+   "matched": "治安"
+  },
+  {
+   "id": 14227,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "路燈"
+  },
+  {
+   "id": 14234,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "crosswalk",
+   "matched": "排水"
+  },
+  {
+   "id": 14230,
+   "island": "議會",
+   "topic": null,
+   "element": "council-hall",
+   "matched": "質詢"
+  },
+  {
+   "id": 14240,
+   "island": "議會",
+   "topic": null,
+   "element": "council-hall",
+   "matched": "議會"
+  },
+  {
+   "id": 14238,
+   "island": "議會",
+   "topic": null,
+   "element": "council-hall",
+   "matched": "定期會"
+  },
+  {
+   "id": 14246,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "道路"
+  },
+  {
+   "id": 14250,
+   "island": "石門",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 14256,
+   "island": "八里",
+   "topic": "校園",
+   "element": "playground",
+   "matched": "遊戲場"
+  },
+  {
+   "id": 14263,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "repair",
+   "matched": "漏水"
+  },
+  {
+   "id": 14269,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "學童"
+  },
+  {
+   "id": 14279,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "路"
+  },
+  {
+   "id": 14283,
+   "island": "淡水",
+   "topic": null,
+   "element": "event",
+   "matched": "說明會"
+  },
+  {
+   "id": 14289,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "道路"
+  },
+  {
+   "id": 14295,
+   "island": "石門",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "候車"
+  },
+  {
+   "id": 14307,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "計程車"
+  },
+  {
+   "id": 14275,
+   "island": "淡水",
+   "topic": null,
+   "element": "library",
+   "matched": "圖書館"
+  },
+  {
+   "id": 14311,
+   "island": "淡水",
+   "topic": "教育",
+   "element": "school",
+   "matched": "球場"
+  },
+  {
+   "id": 14316,
+   "island": "淡水",
+   "topic": null,
+   "element": "crosswalk",
+   "matched": "kind:路"
+  },
+  {
+   "id": 14322,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 14328,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "parking",
+   "matched": "停車"
+  },
+  {
+   "id": 14334,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "repair",
+   "matched": "完工"
+  },
+  {
+   "id": 14345,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國中"
+  },
+  {
+   "id": 14351,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 14355,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "遊戲場"
+  },
+  {
+   "id": 14422,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "道路"
+  },
+  {
+   "id": 14426,
+   "island": "八里",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "健身房"
+  },
+  {
+   "id": 14430,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 14437,
+   "island": "八里",
+   "topic": "民生",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 14442,
+   "island": "石門",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 14446,
+   "island": "議會",
+   "topic": "交通",
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 14452,
+   "island": "淡水",
+   "topic": null,
+   "element": "crosswalk",
+   "matched": "kind:路"
+  },
+  {
+   "id": 14458,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "校園"
+  },
+  {
+   "id": 14461,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "巷"
+  },
+  {
+   "id": 14464,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "hall",
+   "matched": "活動中心"
+  },
+  {
+   "id": 14470,
+   "island": "三芝",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國中"
+  },
+  {
+   "id": 14474,
+   "island": "八里",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "公園"
+  },
+  {
+   "id": 14478,
+   "island": "三芝",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 14484,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 14494,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "街"
+  },
+  {
+   "id": 14490,
+   "island": "淡水",
+   "topic": null,
+   "element": "playground",
+   "matched": "公園"
+  },
+  {
+   "id": 14497,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "路口"
+  },
+  {
+   "id": 14501,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "hall",
+   "matched": "活動中心"
+  },
+  {
+   "id": 14505,
+   "island": "三芝",
+   "topic": "民生",
+   "element": "port",
+   "matched": "漁港"
+  },
+  {
+   "id": 14511,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "youbike"
+  },
+  {
+   "id": 14514,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "公園"
+  },
+  {
+   "id": 14520,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "kind:路"
+  },
+  {
+   "id": 14523,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "parking",
+   "matched": "停車"
+  },
+  {
+   "id": 14527,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "公園"
+  },
+  {
+   "id": 14535,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "關渡橋"
+  },
+  {
+   "id": 14539,
+   "island": "八里",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "江厝橋"
+  },
+  {
+   "id": 14543,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "公車"
+  },
+  {
+   "id": 14546,
+   "island": "議會",
+   "topic": null,
+   "element": "coin",
+   "matched": "稅"
+  },
+  {
+   "id": 14549,
+   "island": "石門",
+   "topic": "民生",
+   "element": "repair",
+   "matched": "護岸"
+  },
+  {
+   "id": 14555,
+   "island": "八里",
+   "topic": "交通",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 14560,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "parking",
+   "matched": "停車"
+  },
+  {
+   "id": 14564,
+   "island": "三芝",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "f137"
+  },
+  {
+   "id": 14568,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "遊戲場"
+  },
+  {
+   "id": 14576,
+   "island": "淡水",
+   "topic": "校園",
+   "element": "school",
+   "matched": "國小"
+  },
+  {
+   "id": 14581,
+   "island": "八里",
+   "topic": "交通",
+   "element": "port",
+   "matched": "kind:港口"
+  },
+  {
+   "id": 14586,
+   "island": "三芝",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "youbike"
+  },
+  {
+   "id": 14589,
+   "island": "八里",
+   "topic": "教育",
+   "element": "school",
+   "matched": "國中"
+  },
+  {
+   "id": 14595,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "crosswalk",
+   "matched": "人行道"
+  },
+  {
+   "id": 14600,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "計程車"
+  },
+  {
+   "id": 14603,
+   "island": "淡水",
+   "topic": "交通",
+   "element": "bridge",
+   "matched": "陸橋"
+  },
+  {
+   "id": 14606,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "crosswalk",
+   "matched": "巷"
+  },
+  {
+   "id": 14611,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "遊戲場"
+  },
+  {
+   "id": 14622,
+   "island": "八里",
+   "topic": "交通",
+   "element": "transit",
+   "matched": "youbike"
+  },
+  {
+   "id": 14626,
+   "island": "淡水",
+   "topic": null,
+   "element": "school",
+   "matched": "學校"
+  },
+  {
+   "id": 14635,
+   "island": "淡水",
+   "topic": null,
+   "element": "sign",
+   "matched": null
+  },
+  {
+   "id": 14639,
+   "island": "淡水",
+   "topic": "民生",
+   "element": "playground",
+   "matched": "公園"
+  }
+ ],
+ "stats": {
+  "council": {
+   "elder-card": 5,
+   "council-hall": 27,
+   "sign": 44,
+   "lunch-tray": 6,
+   "baby": 12,
+   "milk": 3,
+   "suitcase": 9,
+   "flag": 6,
+   "coin": 13,
+   "shield": 7
+  },
+  "local": {
+   "school": 129,
+   "sign": 110,
+   "transit": 73,
+   "crosswalk": 151,
+   "library": 26,
+   "playground": 64,
+   "bridge": 50,
+   "repair": 45,
+   "port": 31,
+   "parking": 18,
+   "event": 26,
+   "market": 9,
+   "hall": 15
+  },
+  "byIsland": {
+   "淡水": {
+    "school": 81,
+    "crosswalk": 118,
+    "playground": 33,
+    "bridge": 41,
+    "transit": 50,
+    "repair": 21,
+    "sign": 59,
+    "market": 7,
+    "event": 15,
+    "library": 17,
+    "port": 9,
+    "hall": 8,
+    "parking": 12
+   },
+   "三芝": {
+    "sign": 23,
+    "library": 8,
+    "playground": 14,
+    "school": 14,
+    "hall": 6,
+    "transit": 9,
+    "repair": 19,
+    "event": 3,
+    "crosswalk": 7,
+    "port": 1
+   },
+   "八里": {
+    "sign": 19,
+    "port": 17,
+    "crosswalk": 23,
+    "playground": 16,
+    "event": 6,
+    "market": 2,
+    "repair": 2,
+    "bridge": 8,
+    "school": 27,
+    "hall": 1,
+    "parking": 5,
+    "transit": 10,
+    "library": 1
+   },
+   "石門": {
+    "transit": 4,
+    "parking": 1,
+    "repair": 3,
+    "sign": 9,
+    "port": 4,
+    "school": 7,
+    "playground": 1,
+    "crosswalk": 3,
+    "bridge": 1,
+    "event": 2
+   },
+   "議會": {
+    "elder-card": 5,
+    "council-hall": 27,
+    "sign": 44,
+    "lunch-tray": 6,
+    "baby": 12,
+    "milk": 3,
+    "suitcase": 9,
+    "flag": 6,
+    "coin": 13,
+    "shield": 7
+   }
+  }
+ }
+}

@@ -1,0 +1,17 @@
+# 依賴與建置
+node_modules/
+dist/
+*.tsbuildinfo
+
+# 環境變數
+.env*
+!.env.example
+
+# 原始資料、抓取結果、原型、截圖：可重新產生，不進 git
+# （WordPress 抓取 → scripts/fetch-wp.mjs；六角版面 → scripts/hex-plan.mjs）
+temp/
+
+# 編輯器／本機設定
+.claude/settings.local.json
+.DS_Store
+Thumbs.db

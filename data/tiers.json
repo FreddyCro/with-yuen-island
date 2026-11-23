@@ -1,0 +1,6 @@
+{
+  "_comment": "元素分級：L 建築、M 中型、S 小物件。maxScale 是依篇數放大的上限，k 是 1 + k·log2(篇數) 的斜率。前端 place.ts 與 scripts/lib/groups.mjs 共用。",
+  "L": { "elements": ["school", "market", "library", "hall", "transit", "council-hall"], "maxScale": 1.25, "k": 0.12 },
+  "M": { "elements": ["playground", "parking", "event", "port", "bridge"], "maxScale": 1.12, "k": 0.08 },
+  "S": { "elements": ["sign", "crosswalk", "repair", "coin", "milk", "flag", "shield", "suitcase", "elder-card", "baby", "lunch-tray"], "maxScale": 1.0, "k": 0 }
+}
