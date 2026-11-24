@@ -14,6 +14,18 @@ export function createFilterNav(h: { onFilter(region: string | null, topic: stri
   nav.innerHTML = '<span class="card-h">搜尋政績</span><div class="pills"></div>';
   document.body.appendChild(nav);
   const pills = nav.querySelector('.pills') as HTMLElement;
+
+  // 手機版（style.css）篩選列接在左上卡片下方、下拉接在篩選列下方：量實際位置寫進 CSS 變數，
+  // 換行或字型載入改變高度時跟著更新
+  const hud = document.getElementById('hud-left');
+  const syncTop = () => {
+    const st = document.body.style;
+    if (hud) st.setProperty('--hud-bottom', `${hud.getBoundingClientRect().bottom}px`);
+    st.setProperty('--filter-bottom', `${nav.getBoundingClientRect().bottom}px`); // 上一行改了 top，這裡讀到的是新位置
+  };
+  const ro = new ResizeObserver(syncTop);
+  if (hud) ro.observe(hud);
+  ro.observe(nav);
   let openMenu: string | null = null; // 展開下拉的地區
   let last: FilterState = { region: null, topic: null, group: null, post: null };
 

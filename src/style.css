@@ -104,14 +104,24 @@ body:has(#panel.open) #filter { right: 394px; }
 #panel .mini time { display: inline; margin-right: 6px; }
 #panel .more { border: 0; background: none; padding: 4px 8px 0 54px; font: inherit; font-size: 12px; color: #DB6A41; cursor: pointer; }
 
-/* 手機：左上標題＋視角不變；篩選面板改成整排放在下方、可左右滑；側欄是底部面板，不用讓位 */
+/* 手機：緊湊版。上排＝標題＋視角（撐滿寬度、右緣對齊）；篩選列緊貼在下方、可左右滑；
+   卡片小標題（視角／搜尋政績）省略。篩選列與下拉的 top 由 filter-nav.ts 量實際高度寫進 CSS 變數。
+   側欄是底部面板，不用讓位 */
 @media (max-width: 720px) {
-  #brand h1 { font-size: 17px; }
-  #filter { top: 150px; left: 14px; right: 14px; max-width: none; }
-  body:has(#panel.open) #filter { right: 14px; }
-  #filter .pills { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 2px; }
+  #hud-left { top: 10px; left: 10px; right: 10px; gap: 6px; max-width: none; }
+  #hud-left .card, #filter { border-radius: 12px; }
+  #ui .card-h, #filter .card-h { display: none; }
+  #brand { flex: 1; padding: 7px 12px; }
+  #brand h1 { font-size: 16px; line-height: 1.25; }
+  #brand p { margin-top: 1px; font-size: 11px; }
+  #ui { display: flex; align-items: center; padding: 6px; }
+  #ui .btns { gap: 4px; }
+  #ui button, #filter .top { padding: 5px 11px; font-size: 12px; }
+  #filter { top: calc(var(--hud-bottom, 70px) + 6px); left: 10px; right: 10px; max-width: none; padding: 6px; }
+  body:has(#panel.open) #filter { right: 10px; }
+  #filter .pills { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
   #filter .top { white-space: nowrap; }
-  #filter .menu { position: fixed; top: 222px; left: 14px; right: auto; }
+  #filter .menu { position: fixed; top: calc(var(--filter-bottom, 120px) + 6px); left: 10px; right: auto; }
 }
 
 /* 行政區標籤：放在海上；篩選或聚焦時淡出 */
