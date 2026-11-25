@@ -71,21 +71,13 @@ body:not(.top) .label.small.place { display: none; }
   #panel header { padding-top: 10px; }
   #tip { display: none; }
 }
-/* ── 右上：篩選面板（照原網站：地區 → 議題下拉）；側欄打開時往左讓開 ── */
+/* ── 右上：篩選面板（地區 tab；議題在側欄選）；側欄打開時往左讓開 ── */
 #filter { position: fixed; top: 14px; right: 14px; z-index: 3; padding: 8px 10px 10px; max-width: min(560px, calc(100vw - 28px)); transition: right .32s cubic-bezier(.2, .8, .2, 1); }
 body:has(#panel.open) #filter { right: 394px; }
-#filter .pills { display: flex; gap: 6px; flex-wrap: wrap; }
-#filter .item { position: relative; }
-#filter .top { border: 1px solid #e4ddd2; border-radius: 999px; padding: 6px 12px; background: #fff; cursor: pointer; font: inherit; font-size: 13px; color: #333; display: inline-flex; align-items: center; gap: 5px; }
-#filter .item.on .top { background: #DB6A41; border-color: #DB6A41; color: #fff; }
-#filter .caret { font-size: 10px; opacity: .6; }
-#filter .menu { position: absolute; top: calc(100% + 6px); right: 0; min-width: 170px; z-index: 1; background: #fff; border-radius: 12px; box-shadow: 0 8px 24px rgba(0, 0, 0, .16); padding: 6px; display: flex; flex-direction: column; }
-#filter .menu button { border: 0; background: none; text-align: left; padding: 8px 10px; border-radius: 8px; font: inherit; font-size: 13px; cursor: pointer; color: #333; display: flex; align-items: center; gap: 7px; }
-#filter .menu button:hover { background: #f4efe7; }
-#filter .menu button.on { background: #222; color: #fff; }
-#filter .menu i { width: 8px; height: 8px; border-radius: 50%; flex: none; }
-#filter .menu small { margin-left: auto; color: #999; }
-#filter .menu button.on small { color: #ccc; }
+/* 地區 tab 跟左上「視角」的按鈕同一套樣式 */
+#filter .tabs { display: flex; gap: 6px; flex-wrap: wrap; }
+#filter .tabs button { border: 1px solid #e4ddd2; border-radius: 999px; padding: 6px 14px; background: #fff; cursor: pointer; font: inherit; font-size: 13px; color: #333; white-space: nowrap; }
+#filter .tabs button.on { background: #222; border-color: #222; color: #fff; }
 
 /* 側欄：返回篩選、篩選模式的分段 */
 #panel .crumb { padding: 14px 18px 0; }
@@ -105,7 +97,7 @@ body:has(#panel.open) #filter { right: 394px; }
 #panel .more { border: 0; background: none; padding: 4px 8px 0 54px; font: inherit; font-size: 12px; color: #DB6A41; cursor: pointer; }
 
 /* 手機：緊湊版。上排＝標題＋視角（撐滿寬度、右緣對齊）；篩選列緊貼在下方、可左右滑；
-   卡片小標題（視角／搜尋政績）省略。篩選列與下拉的 top 由 filter-nav.ts 量實際高度寫進 CSS 變數。
+   卡片小標題（視角／搜尋政績）省略。篩選列的 top 由 filter-nav.ts 量實際高度寫進 CSS 變數。
    側欄是底部面板，不用讓位 */
 @media (max-width: 720px) {
   #hud-left { top: 10px; left: 10px; right: 10px; gap: 6px; max-width: none; }
@@ -116,12 +108,10 @@ body:has(#panel.open) #filter { right: 394px; }
   #brand p { margin-top: 1px; font-size: 11px; }
   #ui { display: flex; align-items: center; padding: 6px; }
   #ui .btns { gap: 4px; }
-  #ui button, #filter .top { padding: 5px 11px; font-size: 12px; }
+  #ui button, #filter .tabs button { padding: 5px 11px; font-size: 12px; }
   #filter { top: calc(var(--hud-bottom, 70px) + 6px); left: 10px; right: 10px; max-width: none; padding: 6px; }
   body:has(#panel.open) #filter { right: 10px; }
-  #filter .pills { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
-  #filter .top { white-space: nowrap; }
-  #filter .menu { position: fixed; top: calc(var(--filter-bottom, 120px) + 6px); left: 10px; right: auto; }
+  #filter .tabs { gap: 4px; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
 }
 
 /* 行政區標籤：放在海上；篩選或聚焦時淡出 */

@@ -35,8 +35,7 @@ const layout = layoutJson as unknown as Layout;
 for (const d of layout.districts) d.posts = (cellsJson.byDistrict as Record<string, number>)[d.name] ?? d.posts;
 layout.council.posts = cellsJson.council;
 const query = new URLSearchParams(location.search);
-const palette = applyPalette(query.get('palette'), layout);
-document.title = `北海岸政績島（${palette.name}）`;
+applyPalette(query.get('palette'), layout);
 
 // ── 比例：1 場景單位 = 500 m ──
 const M = 1 / 500;
@@ -240,7 +239,6 @@ if (query.get('sunset') !== '0') {
   const mid = byKey.get(tj.from.join(','))!.position.clone().add(byKey.get(tj.to.join(','))!.position).multiplyScalar(0.5);
   sunPos = sunsetSunPosition(mid, byKey.get('council')!.position);
   applySunset({ scene, sun, hemi, seaMat }, sunPos);
-  document.title += '・夕陽';
 }
 
 // ── 橋：從環道的門起坡、過水拱起、落到對岸的門 ──
