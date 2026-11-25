@@ -114,6 +114,27 @@ body:has(#panel.open) #filter { right: 394px; }
   #filter .tabs { gap: 4px; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
 }
 
+/* ── 右下：操作說明（? 鈕＋說明卡：電腦、手機、共用三段都列）；側欄打開時 ? 鈕往左讓開 ── */
+#help-btn { position: fixed; right: 14px; bottom: 14px; z-index: 3; width: 20px; height: 20px; padding: 0; border: 0; border-radius: 999px; font: 700 12px Georgia, serif; color: #DB6A41; cursor: pointer; transition: right .32s cubic-bezier(.2, .8, .2, 1); }
+#help-btn:hover, #help-btn[aria-expanded="true"] { background: #DB6A41; color: #fff; }
+body:has(#panel.open) #help-btn { right: 394px; }
+#help { position: fixed; right: 14px; bottom: 42px; z-index: 3; width: 300px; max-width: calc(100vw - 28px); padding: 14px 16px 12px; transition: right .32s cubic-bezier(.2, .8, .2, 1); }
+body:has(#panel.open) #help { right: 394px; }
+#help header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; }
+#help h3 { margin: 0; font-size: 15px; color: #222; }
+#help .x { border: 0; background: #f0ebe3; width: 26px; height: 26px; border-radius: 999px; cursor: pointer; font-size: 12px; color: #444; }
+#help .x:hover { background: #e4ddd2; }
+#help h4 { margin: 10px 0 4px; font-size: 11px; font-weight: 700; letter-spacing: .08em; color: #999; }
+#help ul { list-style: none; margin: 0; padding: 0; }
+#help li { display: flex; gap: 10px; padding: 3px 0; font-size: 13px; line-height: 1.45; color: #444; }
+#help li b { flex: none; width: 76px; color: #222; }
+@media (max-width: 720px) {
+  #help-btn { right: 10px; bottom: 10px; }
+  body:has(#panel.open) #help-btn { right: 10px; }
+  #help { right: 10px; bottom: 38px; width: auto; left: 10px; }
+  body:has(#panel.open) #help { right: 10px; }
+}
+
 /* 行政區標籤：放在海上；篩選或聚焦時淡出 */
 .label.district { transition: opacity .25s; }
 body.filtering .label.district { opacity: 0; }

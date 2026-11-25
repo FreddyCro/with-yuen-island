@@ -6,6 +6,7 @@ import type { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GROUP_BY_KEY, TOPIC_BUCKETS, groupTitle } from './scene/groups';
 import { createSidebar, type FilterState } from './ui/sidebar';
 import { createFilterNav, REGIONS } from './ui/filter-nav';
+import { createHelp } from './ui/help';
 
 interface Opts {
   camera: THREE.PerspectiveCamera;
@@ -43,6 +44,7 @@ export function setupInteraction({ camera, controls, dom, holders, onFocus }: Op
     onPost: (post) => set({ ...state, post }, { camera: false }),
   });
   const nav = createFilterNav({ onFilter: (region, topic) => set({ region, topic, group: null, post: null }) });
+  createHelp();
 
   // ── 狀態 → 畫面 ──
   function set(next: FilterState, opt: { camera?: boolean } = {}): void {
