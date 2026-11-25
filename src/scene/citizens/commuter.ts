@@ -1,8 +1,8 @@
 import * as THREE from 'three';
-import { buildFigure, pickColors, pickHair, sway, rbox, soft, HAND_Y, FIG, type Citizen, type CitizenOptions } from './figure';
+import { buildFigure, pickColors, pickHair, walk, rbox, soft, HAND_Y, FIG, type Citizen, type CitizenOptions } from './figure';
 
 /**
- * 通勤族：站著等車，低頭看手機；斜背一個肩背包（accent 色）。
+ * 通勤族：邊走邊低頭看手機；斜背一個肩背包（accent 色）。
  * 淡水、八里的公車、輕軌、捷運政績。
  */
 export function buildCommuter({ rng, colors, hairStyle, phase = 0 }: CitizenOptions): Citizen {
@@ -30,7 +30,8 @@ export function buildCommuter({ rng, colors, hairStyle, phase = 0 }: CitizenOpti
   return {
     object,
     update(t: number) {
-      sway(fig, t, phase);
+      walk(fig, t, phase, 4.5, 0.4, false); // 右手拿手機不擺，左手照常
+      fig.armL.rotation.x = -0.35 * Math.sin(t * 4.5 + phase);
       fig.head.rotation.x = 0.3 + 0.03 * Math.sin(t * 1.7 + phase);
       fig.head.rotation.y = 0.05 * Math.sin(t * 0.6 + phase); // 看手機，頭不太轉
     },

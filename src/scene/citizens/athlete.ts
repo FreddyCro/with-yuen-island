@@ -1,8 +1,8 @@
 import * as THREE from 'three';
-import { buildFigure, pickColors, pickHair, sway, soft, FIG, type Citizen, type CitizenOptions } from './figure';
+import { buildFigure, pickColors, pickHair, walk, soft, FIG, type Citizen, type CitizenOptions } from './figure';
 
 /**
- * 運動者：戴髮帶（accent 色），右手在身前拍球，球會彈。
+ * 運動者：戴髮帶（accent 色），邊走邊用右手在身前拍球，球會彈。
  * 球場、運動中心、跑道政績。
  */
 export function buildAthlete({ rng, colors, hairStyle, phase = 0 }: CitizenOptions): Citizen {
@@ -24,7 +24,8 @@ export function buildAthlete({ rng, colors, hairStyle, phase = 0 }: CitizenOptio
   return {
     object,
     update(t: number) {
-      sway(fig, t, phase);
+      walk(fig, t, phase, 5, 0.4, false); // 右手拍球不擺，左手照常
+      fig.armL.rotation.x = -0.35 * Math.sin(t * 5 + phase);
       const k = Math.abs(Math.sin(t * 5 + phase));      // 0 = 球在地上、1 = 球在手上
       ball.position.y = 0.075 + 0.25 * k;
       fig.armR.rotation.set(-0.55 - 0.55 * k, 0, 0.15);  // 手跟著球上下

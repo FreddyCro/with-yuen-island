@@ -91,6 +91,7 @@ export function buildFigure(c: CitizenColors, hairStyle: HairStyle = 'short'): F
   // 腿：以髖關節為支點，走路時前後擺
   const makeLeg = (s: number) => {
     const leg = new THREE.Group();
+    leg.name = s < 0 ? 'legL' : 'legR';
     leg.position.set(s * 0.055, FIG.hipY, 0);
     const l = capsule(0.045, 0.1, bottom); l.position.y = -0.095;
     const sh = rbox(0.085, 0.05, 0.12, 0.022, shoe, 0, -FIG.hipY + 0.025, 0.012);

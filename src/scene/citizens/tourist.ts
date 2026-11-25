@@ -1,8 +1,8 @@
 import * as THREE from 'three';
-import { buildFigure, pickColors, pickHair, sway, rbox, soft, FIG, type Citizen, type CitizenOptions } from './figure';
+import { buildFigure, pickColors, pickHair, walk, rbox, soft, FIG, type Citizen, type CitizenOptions } from './figure';
 
 /**
- * 遊客：寬邊遮陽帽（米色，帽帶 accent 色），雙手舉相機在臉前拍照。
+ * 遊客：寬邊遮陽帽（米色，帽帶 accent 色），雙手舉相機在臉前、邊走邊取景。
  * 三芝、石門的觀光政績：遊客中心、步道、海岸景點。
  */
 export function buildTourist({ rng, colors, hairStyle, phase = 0 }: CitizenOptions): Citizen {
@@ -40,7 +40,7 @@ export function buildTourist({ rng, colors, hairStyle, phase = 0 }: CitizenOptio
   return {
     object,
     update(t: number) {
-      sway(fig, t, phase);
+      walk(fig, t, phase, 4, 0.35, false); // 兩手舉著相機不擺，步子慢一點
       fig.head.rotation.x = 0.22;
       // 取景時整個人慢慢左右掃，不轉頭
       fig.group.rotation.y = 0.25 * Math.sin(t * 0.5 + phase);

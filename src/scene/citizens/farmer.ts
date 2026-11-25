@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { buildFigure, pickColors, pickHair, sway, soft, capsule, FIG, type Citizen, type CitizenOptions } from './figure';
+import { buildFigure, pickColors, pickHair, walk, soft, capsule, FIG, type Citizen, type CitizenOptions } from './figure';
 
 /**
  * 農民：斗笠、左臂抱一捆茭白筍（三芝名產：白色筍身、綠色葉梢）。
@@ -41,7 +41,8 @@ export function buildFarmer({ rng, colors, hairStyle, phase = 0 }: CitizenOption
   return {
     object,
     update(t: number) {
-      sway(fig, t, phase);
+      walk(fig, t, phase, 4, 0.35, false); // 左手抱著筍不擺，右手照常
+      fig.armR.rotation.x = 0.35 * Math.sin(t * 4 + phase);
       fig.armL.rotation.x = -1.3 + 0.03 * Math.sin(t * 2.2 + phase);
     },
   };
