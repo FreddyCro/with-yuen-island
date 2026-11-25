@@ -123,6 +123,7 @@ function cableStayed(g: THREE.Group, deck: Deck, maxTopLocal = Infinity): void {
 /**
  * 關渡大橋（照實景）：三跨紅色中承拱，中拱最大。每跨兩片拱肋、拱頂橫向繫桿、白色吊桿；
  * 拱肋穿過橋面後往下在水面的圓形混凝土墩上收成 V 形紅色斜撐。
+ * 拱腳就落在 V 形斜撐的頂端（橋墩 ± REACH），拱和墩才連成一體；拱心略低於橋面，拱肋像實景一樣穿過橋面。
  */
 function arches(g: THREE.Group, deck: Deck): void {
   const spans = [0.3, 0.4, 0.3];
@@ -132,7 +133,11 @@ function arches(g: THREE.Group, deck: Deck): void {
   const up = new THREE.Vector3(0, 1, 0);
   const RIB = DECK_W * 0.42;
   const L = deck.length;
-  const ARCH_FLAT = 0.48; // 拱肋壓扁的比例（1 = 半圓）
+  const ARCH_FLAT = 0.85; // 拱肋壓扁的比例（1 = 半圓）
+  const REACH = Math.min(L * 0.03, 0.6); // V 形斜撐頂端離橋墩的距離（沿橋軸）；拱腳落在這裡
+  const ARCH_Y = -0.02;   // 拱腳比橋面弧線低這麼多：拱肋穿過橋面板、接上斜撐頂
+  const xOf = (t: number) => deck.at(t).x;
+  const tOf = (x: number) => x / REF + 0.5; // 橋面弧線左右對稱，x 和 t 是線性的
   const strut = (from: THREE.Vector3, to: THREE.Vector3, w: number) => {
     const m = new THREE.Mesh(new THREE.BoxGeometry(w, from.distanceTo(to), w), red);
     m.position.copy(from.clone().add(to).multiplyScalar(0.5));
@@ -141,40 +146,42 @@ function arches(g: THREE.Group, deck: Deck): void {
   };
   const T0 = 0.08, T1 = 0.92, span = T1 - T0; // 拱只放在水面上那段，兩端是引道
   const feet = [T0];
-  let t0 = T0;
-  for (const f of spans) {
-    const tw = span * f, tc = t0 + tw / 2, c = deck.at(tc);
-    const rad = (L * tw) / 2;
+  for (const f of spans) feet.push(feet[feet.length - 1] + span * f);
+
+  for (let i = 0; i < spans.length; i++) {
+    // 拱腳：左墩右側、右墩左側的斜撐頂端；拱順著兩腳的高差微傾
+    const x0 = xOf(feet[i]) + REACH, x1 = xOf(feet[i + 1]) - REACH, rad = (x1 - x0) / 2;
+    const y0 = deck.at(tOf(x0)).y + ARCH_Y, y1 = deck.at(tOf(x1)).y + ARCH_Y;
+    const c = new THREE.Vector3((x0 + x1) / 2, (y0 + y1) / 2, 0);
+    const tilt = Math.atan2(y1 - y0, x1 - x0), cos = Math.cos(tilt), sin = Math.sin(tilt);
+    const onArch = (x: number, h: number) => new THREE.Vector3(c.x + x * cos - h * sin, c.y + x * sin + h * cos, 0); // 拱上一點（沿拱軸 x、高 h）
     for (const sign of [1, -1]) {
       const arch = new THREE.Mesh(new THREE.TorusGeometry(rad, 0.11, 6, 28, Math.PI), red);
-      arch.position.copy(c).add(SIDE.clone().multiplyScalar(sign * RIB)); arch.position.y += 0.3;
-      arch.scale.y = ARCH_FLAT; arch.castShadow = true;
+      arch.position.copy(c).add(SIDE.clone().multiplyScalar(sign * RIB));
+      arch.scale.y = ARCH_FLAT; arch.rotation.z = tilt; arch.castShadow = true;
       g.add(arch);
     }
-    for (let i = 1; i < 7; i++) {
-      const u = -1 + (2 * i) / 7, x = u * rad, h = Math.sqrt(Math.max(0, rad * rad - x * x)) * ARCH_FLAT;
-      const tt = tc + (u * tw) / 2;
-      const top = deck.at(tt); top.y += 0.3 + h;
-      if (i >= 2 && i <= 5) { const tie = new THREE.Mesh(new THREE.BoxGeometry(0.08, 0.08, RIB * 2), red); tie.position.copy(top); g.add(tie); }
+    for (let k = 1; k < 7; k++) {
+      const u = -1 + (2 * k) / 7, x = u * rad, h = Math.sqrt(Math.max(0, rad * rad - x * x)) * ARCH_FLAT;
+      const top = onArch(x, h);
+      if (k >= 2 && k <= 5) { const tie = new THREE.Mesh(new THREE.BoxGeometry(0.08, 0.08, RIB * 2), red); tie.position.copy(top); g.add(tie); }
       for (const sign of [1, -1]) {
         const p2 = top.clone().add(SIDE.clone().multiplyScalar(sign * RIB));
-        const p1 = deck.at(tt).add(SIDE.clone().multiplyScalar(sign * RIB)); p1.y += 0.36;
+        const p1 = deck.at(tOf(top.x)).add(SIDE.clone().multiplyScalar(sign * RIB)); p1.y += 0.36;
         g.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([p1, p2]), hanger));
       }
     }
-    t0 += tw; feet.push(t0);
   }
   for (const t of feet) {
     const at = deck.at(t);
     const base = at.clone(); base.y = deck.pierBottom + 0.75; // 圓墩頂在水面上一點
     const p = new THREE.Mesh(new THREE.CylinderGeometry(0.55, 0.6, 0.75, 10), concrete);
     p.position.copy(at); p.position.y = deck.pierBottom + 0.375; p.castShadow = true; g.add(p);
-    const reach = Math.min(L * 0.07, 1.3);
     for (const sign of [1, -1]) {
       const foot = base.clone().add(SIDE.clone().multiplyScalar(sign * RIB * 0.6));
       for (const d of [1, -1]) {
-        if ((t === T0 && d < 0) || (t >= T1 - 1e-6 && d > 0)) continue;
-        const top = at.clone().add(DIR.clone().multiplyScalar(d * reach)).add(SIDE.clone().multiplyScalar(sign * RIB)); top.y = deck.at(t + (d * reach) / L).y - 0.02;
+        if ((t === T0 && d < 0) || (t >= T1 - 1e-6 && d > 0)) continue; // 兩端的墩只朝橋內撐
+        const top = new THREE.Vector3(at.x + d * REACH, deck.at(tOf(at.x + d * REACH)).y + ARCH_Y, sign * RIB); // = 該側拱腳
         strut(foot, top, 0.16);
       }
     }
