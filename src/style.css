@@ -120,7 +120,10 @@ body:has(#panel.open) #filter { right: 394px; }
 body:has(#panel.open) #help-btn { right: 394px; }
 #help { position: fixed; right: 14px; bottom: 42px; z-index: 3; width: 300px; max-width: calc(100vw - 28px); padding: 14px 16px 12px; transition: right .32s cubic-bezier(.2, .8, .2, 1); }
 body:has(#panel.open) #help { right: 394px; }
-#help header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; }
+/* 最大高度：頂端不蓋到上方面板（桌面約 87px 高）；超過就內容區內捲，標題列與 ✕ 固定 */
+#help:not([hidden]) { display: flex; flex-direction: column; box-sizing: border-box; max-height: calc(100vh - 42px - 100px); max-height: calc(100dvh - 42px - 100px); }
+#help .scroll { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; margin-right: -8px; padding-right: 8px; }
+#help header { flex: none; display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; }
 #help h3 { margin: 0; font-size: 15px; color: #222; }
 #help .x { border: 0; background: #f0ebe3; width: 26px; height: 26px; border-radius: 999px; cursor: pointer; font-size: 12px; color: #444; }
 #help .x:hover { background: #e4ddd2; }
@@ -128,10 +131,14 @@ body:has(#panel.open) #help { right: 394px; }
 #help ul { list-style: none; margin: 0; padding: 0; }
 #help li { display: flex; gap: 10px; padding: 3px 0; font-size: 13px; line-height: 1.45; color: #444; }
 #help li b { flex: none; width: 76px; color: #222; }
+#help li a { color: #DB6A41; font-weight: 700; text-decoration: none; white-space: nowrap; }
+#help li a:hover { text-decoration: underline; }
 @media (max-width: 720px) {
   #help-btn { right: 10px; bottom: 10px; }
   body:has(#panel.open) #help-btn { right: 10px; }
   #help { right: 10px; bottom: 38px; width: auto; left: 10px; }
+  /* 手機：頂端讓開標題列＋篩選列（篩選列約 41px 高，再留 14px 間距） */
+  #help:not([hidden]) { max-height: calc(100vh - 38px - var(--hud-bottom, 70px) - 55px); max-height: calc(100dvh - 38px - var(--hud-bottom, 70px) - 55px); }
   body:has(#panel.open) #help { right: 10px; }
 }
 
