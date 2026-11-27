@@ -209,7 +209,9 @@ Expected: PASS
 - `apply-milestones.mjs`：用 `parseChecklist` 解析，保留舊資料裡的 `image`，寫回 `data/milestones.json`（key 排序、兩格縮排）。寫入前呼叫 `validateMilestones` 的同一套規則檢查，有錯就印出錯誤、不寫入。
 - `fetch-milestone-images.mjs`：對每個還沒有 `image` 的 id，抓 `https://withyuen.com/wp-json/wp/v2/posts/<id>?_embed`，取 `_embedded['wp:featuredmedia'][0].source_url`。抓不到就略過並印出警告。每次請求之間間隔 300 ms。
 
-跑一次 `node scripts/suggest-milestones.mjs`，確認 `temp/milestone-candidates.md` 大約有 90 行。
+清單另外加一段「小型改善」：元素是 `crosswalk`、`repair`、`transit` 的文章，標題符合 `增設|劃設|設置|改善完成|更新` 的，列成 done 候選，預設不打勾。斑馬線、標誌這類小改善確認完成的話也算落地（規格〈落地與動工的資料〉）。
+
+跑一次 `node scripts/suggest-milestones.mjs`，確認 `temp/milestone-candidates.md` 有產生；落地加動工候選大約 90 行，小型改善一段另外計。
 
 - [ ] **Step 6: Commit**
 
@@ -787,8 +789,61 @@ git commit -m "feat: 匯出直式縮時影片"
 
 ---
 
+### Task 9: 里程碑數字與「我要找議員」入口
+
+**Files:**
+- Modify: `src/timeline/config.ts`（加 `SHOW_LANDED_COUNT = false`、`CONTACT`）
+- Modify: `src/timeline/model.ts`（加 `milestoneLine`）
+- Modify: `src/ui/timeline-bar.ts`（播到最後一個月時顯示里程碑那一行）
+- Modify: `src/timeline/export-video.ts`（影片最後 2 秒疊上里程碑那一行）
+- Modify: `index.html`、`src/style.css`（固定的找議員入口）
+- Test: `tests/timeline-model.test.ts`（加測試）
+
+**Interfaces:**
+- Consumes: Task 3 的 `islandCountsAt`、`groupStateAt`；Task 2 的 `Milestones`。
+- Produces:
+  - `export function milestoneLine(groups: TimelineGroup[], ms: Milestones, opts: { showLanded: boolean; weeks: number }): string`，例如 `四年 879 篇問政紀錄，平均每週 4 篇 · 已落地 24 件`。`showLanded` 為 `false` 時不出現落地那一段。平均每週篇數四捨五入成整數。
+  - `CONTACT = { line: '<以 withyuen.com 聯絡頁為準>', office: '<服務處地址或連結>' }`。實作前要核對 withyuen.com 的聯絡頁；競品調查看到的 LINE 是 `@kky2929i`。
+
+- [ ] **Step 1: 寫會失敗的測試**
+
+```ts
+import { milestoneLine } from '../src/timeline/model';
+it('里程碑：落地件數只在打開開關時顯示', () => {
+  const groups = [school, sign, library];
+  expect(milestoneLine(groups, ms, { showLanded: false, weeks: 2 })).toBe('四年 6 篇問政紀錄，平均每週 3 篇');
+  expect(milestoneLine(groups, ms, { showLanded: true, weeks: 2 })).toBe('四年 6 篇問政紀錄，平均每週 3 篇 · 已落地 2 件');
+});
+```
+（沿用同一個測試檔裡的 `school`、`sign`、`library`、`ms`。已落地件數是建設類物件在最新月份為 `solid` 的組數：school 和 library，共 2 件。）
+
+- [ ] **Step 2: 執行測試，確認失敗**
+
+Run: `pnpm vitest run tests/timeline-model.test.ts`
+Expected: FAIL，`milestoneLine` 不存在。
+
+- [ ] **Step 3: 實作 `milestoneLine`，接到時間軸和影片，加上找議員入口**
+
+- 實際呼叫時，`weeks` 用資料第一天到最後一天的週數。
+- 找議員入口放在左上角品牌卡下方，是一顆小膠囊按鈕，點了開 LINE 和服務處資訊。時間軸開不開都顯示。
+
+- [ ] **Step 4: 執行測試，確認通過**
+
+Run: `pnpm vitest run tests/timeline-model.test.ts && pnpm typecheck`
+Expected: PASS
+
+- [ ] **Step 5: Commit**
+
+```bash
+git add src/timeline/config.ts src/timeline/model.ts src/ui/timeline-bar.ts src/timeline/export-video.ts index.html src/style.css tests/timeline-model.test.ts
+git commit -m "feat: 里程碑數字與找議員入口"
+```
+
+---
+
 ## 完成後
 
-- Freddy 勾選 `temp/milestone-candidates.md`，然後執行 `node scripts/apply-milestones.mjs` 和 `node scripts/fetch-milestone-images.mjs`。
+- Freddy 勾選 `temp/milestone-candidates.md`（含小型改善一段），然後執行 `node scripts/apply-milestones.mjs` 和 `node scripts/fetch-milestone-images.mjs`。
 - 確認畫面沒問題後，把 `src/timeline/config.ts` 的 `TIMELINE_DEFAULT` 改成 `true`，另外 commit 一次。
 - 跑完 `fetch-milestone-images.mjs` 之後，側欄就會自動顯示施工、落地照片（Task 6 已經做好顯示的部分），不用另外改程式。
+- 看過已落地件數，覺得數字夠漂亮了，再把 `SHOW_LANDED_COUNT` 改成 `true`。
